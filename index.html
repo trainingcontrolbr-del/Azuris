@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Azuris Soluções em SST — Segurança, gestão e tecnologia para PMEs</title>
+<meta name="description" content="Consultoria, treinamentos, documentos e plataformas de Saúde e Segurança do Trabalho para pequenas e médias empresas. Soluções personalizadas com equipe multidisciplinar.">
+<script src="image-slot.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:oklch(0.16 0.02 255);
+  --bg-2:oklch(0.20 0.024 255);
+  --card:oklch(0.22 0.028 255);
+  --line:oklch(1 0 0 / 0.09);
+  --ink:oklch(0.97 0.008 250);
+  --ink-dim:oklch(0.78 0.018 250);
+  --ink-faint:oklch(0.58 0.02 250);
+  --accent:oklch(0.7 0.15 245);
+  --accent-2:oklch(0.76 0.13 215);
+  --accent-ink:oklch(0.15 0.03 250);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Manrope',sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;text-wrap:pretty}
+h1,h2,h3,.display{font-family:'Sora',sans-serif}
+a{color:var(--accent);text-decoration:none}
+a:hover{color:oklch(0.8 0.14 245)}
+img{display:block;max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 40px}
+.btn{display:inline-flex;align-items:center;gap:8px;white-space:nowrap;padding:14px 26px;border-radius:8px;font-weight:600;font-size:15px;border:1px solid transparent;cursor:pointer;transition:transform .15s ease, opacity .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--accent);color:var(--accent-ink)}
+.btn-primary:hover{color:var(--accent-ink);opacity:.92}
+.btn-outline{border-color:var(--line);color:var(--ink)}
+.btn-outline:hover{color:var(--ink);border-color:oklch(1 0 0 / 0.25)}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+
+/* NAV */
+header{position:sticky;top:0;z-index:50;background:var(--bg-2);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Sora',sans-serif;font-weight:700;font-size:19px}
+.logo-mark{width:50px;height:50px;border-radius:0;flex-shrink:0;background:transparent}
+.logo-mark::part(frame){background:transparent;border:none;border-radius:0;box-shadow:none}
+.logo-mark::part(image){border-radius:0;object-fit:contain}
+.logo-mark::part(ring){display:none}
+.logo-wrap{position:relative;display:flex;align-items:center;gap:10px}
+.logo-size{display:none}
+.hidden-legacy{position:absolute;top:calc(100% + 8px);left:0;display:none;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 12px;z-index:60;white-space:nowrap}
+a.logo-wrap{color:var(--ink);text-decoration:none}
+a.logo-wrap:hover{color:var(--ink)}
+a.logo-wrap .logo-mark{pointer-events:none}
+.logo-size label{font-size:11px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.05em;font-family:'Manrope',sans-serif;font-weight:600}
+.logo-size input{width:110px;accent-color:var(--accent)}
+.logo-size output{font-size:12px;color:var(--ink-dim);font-family:'Manrope',sans-serif;min-width:38px}
+.nav-links{display:flex;gap:34px}
+.nav-links a{color:var(--ink-dim);font-size:15px;font-weight:500}
+.nav-links a:hover{color:var(--ink)}
+.nav-links a.btn.btn-primary,.nav-links a.btn.btn-primary:hover{color:var(--accent-ink);font-size:14px;font-weight:600;padding:10px 20px;white-space:nowrap}
+.nav-actions{display:flex;align-items:center;gap:14px}
+.nav-actions .btn{padding:10px 20px;font-size:14px;white-space:nowrap}
+
+/* HERO */
+.hero{position:relative;padding:96px 0 80px;overflow:hidden}
+#hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:.4;pointer-events:none}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,oklch(0.16 0.02 255 / 0.55),var(--bg) 92%);z-index:0;pointer-events:none}
+#wave-bg{position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.55}
+.hero::before{content:"";position:absolute;top:-200px;right:-160px;width:640px;height:640px;background:radial-gradient(circle,oklch(0.42 0.14 245 / 0.4),transparent 70%);filter:blur(10px);pointer-events:none}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,0.95fr);gap:56px;align-items:center}
+.hero .eyebrow{font-size:17px}
+.hero h1{font-size:56px;line-height:1.06;font-weight:700;letter-spacing:-0.02em;margin:18px 0 22px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p.sub{font-size:18px;color:var(--ink-dim);max-width:520px;margin-bottom:34px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:28px}
+.hero-note{font-size:13px;color:var(--ink-faint)}
+.hero-visual{position:relative;min-width:0;display:flex;flex-direction:column;gap:20px;justify-content:center}
+.hero-shot{width:118%;max-width:none;margin-left:-4%;display:block;filter:drop-shadow(0 40px 70px oklch(0 0 0 / 0.55)) sepia(0.35) hue-rotate(-20deg) saturate(1.6) brightness(0.95);transform-style:preserve-3d;transition:transform .1s ease-out;will-change:transform}
+.float-card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;box-shadow:0 20px 40px -18px oklch(0 0 0 / 0.55)}
+.float-1{max-width:300px;align-self:flex-end}
+.float-2{max-width:300px;align-self:flex-end}
+.float-label{font-size:11px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
+.float-value{font-size:20px;font-weight:700;font-family:'Sora',sans-serif}
+.float-2 .float-value{color:var(--accent)}
+.float-card .float-value{font-size:30px;margin-bottom:2px}
+.float-card .float-label{margin-bottom:8px}
+.float-card .float-delta{color:var(--ink-dim);font-weight:500;line-height:1.45}
+.float-1 .float-value{color:var(--accent);font-size:15px}
+.float-2 .float-label{margin-bottom:8px}
+.float-2 .float-delta{color:var(--ink);font-weight:500;line-height:1.45}
+.float-delta{font-size:12px;color:var(--accent);font-weight:600}
+
+/* TRUST */
+.trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:26px 0;background:var(--bg-2)}
+.trust-row{display:flex;align-items:center;gap:40px;justify-content:space-between}
+.trust-label{font-size:13px;color:var(--ink-faint);white-space:nowrap}
+.trust-logos{display:flex;gap:36px;flex:1;justify-content:space-between}
+.trust-logo{font-family:'Sora',sans-serif;font-weight:700;font-size:16px;color:var(--ink-faint);letter-spacing:.02em}
+
+/* FEATURE STRIP */
+.feature-strip{padding:28px 0 64px}
+.feature-grid{display:flex;flex-direction:column;gap:14px}
+.feature-item{display:grid;grid-template-columns:auto minmax(200px,300px) 1px 1fr auto;align-items:center;gap:26px;background:linear-gradient(150deg,oklch(0.23 0.03 255 / 0.92),oklch(0.18 0.024 255 / 0.94));border:1px solid oklch(1 0 0 / 0.1);border-radius:16px;padding:18px 26px;transition:transform .28s cubic-bezier(.16,.8,.3,1),border-color .28s ease,box-shadow .28s ease;box-shadow:0 1px 0 oklch(1 0 0 / 0.06) inset,0 14px 28px -20px oklch(0 0 0 / 0.7)}
+.feature-item:hover{transform:translateY(-3px);border-color:oklch(0.7 0.15 245 / 0.5);box-shadow:0 1px 0 oklch(1 0 0 / 0.1) inset,0 0 0 1px oklch(0.7 0.15 245 / 0.2),0 22px 44px -24px oklch(0.55 0.16 250 / 0.5)}
+.icon{width:62px;height:62px;border-radius:14px;background:transparent;transition:transform .28s ease}
+.icon::part(frame){background:transparent;border:none;box-shadow:none}
+.icon:not([data-filled]){width:124px;height:124px}
+.feature-item:hover .icon{transform:scale(1.06)}
+.feature-item h3{font-size:19px;line-height:1.28;overflow-wrap:anywhere}
+.feature-div{width:1px;height:44px;background:oklch(1 0 0 / 0.14)}
+.feature-item p{font-size:15px;color:var(--ink-dim);line-height:1.5}
+.feature-link{justify-self:end;display:inline-flex;align-items:center;gap:8px;white-space:nowrap;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--accent);transition:color .2s ease}
+.feature-link span{display:inline-block;transition:transform .2s ease;font-size:15px}
+.feature-link:hover{color:oklch(0.85 0.14 245)}
+.feature-link:hover span{transform:translateX(3px)}
+@media(max-width:900px){.feature-item{grid-template-columns:auto 1fr;gap:16px}.feature-div{display:none}.feature-item p{grid-column:1/-1}.feature-link{grid-column:1/-1;justify-self:start}}
+
+/* STATS */
+.stats{padding:76px 0 100px;position:relative;overflow:hidden}
+#stats-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:.35;pointer-events:none}
+.stats::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--bg) 0%,oklch(0.16 0.02 255 / 0.5) 40%,var(--bg) 100%);z-index:0;pointer-events:none}
+.stats .wrap{position:relative;z-index:1}
+.stats-grid{display:flex;flex-direction:column;gap:44px}
+.stats .eyebrow{font-size:17px}
+.stats h2{font-size:52px;line-height:1.1;letter-spacing:-0.02em;margin-top:24px;margin-bottom:24px}
+.stats h2 em{font-style:normal;color:var(--accent)}
+.stats p{color:var(--ink-dim);font-size:19px;line-height:1.6;max-width:820px}
+.stats p+p{margin-top:20px}
+.stats p strong{color:var(--ink)}
+.stats .stat-note{margin-top:40px;display:flex;flex-wrap:wrap;align-items:center;gap:14px 18px;max-width:none;font-family:'Sora',sans-serif;font-weight:600;font-size:19px;line-height:1.3;padding:26px 30px;border-radius:16px;border:1px solid oklch(0.7 0.15 245 / 0.35);background:linear-gradient(120deg,oklch(0.28 0.06 250 / 0.85),oklch(0.2 0.03 255 / 0.9));box-shadow:0 1px 0 oklch(1 0 0 / 0.08) inset,0 18px 40px -26px oklch(0.55 0.16 250 / 0.6)}
+.stats .stat-note b{font-weight:600;color:var(--ink)}
+.stats .stat-note b.last{color:var(--accent)}
+.stat-note span{color:var(--accent);font-size:22px;line-height:1}
+.stat-row{display:flex;gap:44px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:32px}
+.stat-num{font-family:'Sora',sans-serif;font-size:38px;font-weight:700;color:var(--accent)}
+.stat-cap{font-size:13px;color:var(--ink-faint);margin-top:6px}
+
+/* PILLARS */
+.pillars{padding:0 0 100px;position:relative;overflow:hidden}
+#pillars-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:.3;pointer-events:none}
+.pillars::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--bg) 0%,oklch(0.16 0.02 255 / 0.55) 40%,var(--bg) 100%);z-index:0;pointer-events:none}
+.pillars .wrap{position:relative;z-index:1}
+.section-head{max-width:600px;margin-bottom:48px}
+.section-head h2{font-size:36px;letter-spacing:-0.01em;margin-top:14px}
+.pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pillar-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:32px 28px;transition:border-color .2s ease, transform .2s ease}
+.pillar-card:hover{border-color:oklch(1 0 0 / 0.2);transform:translateY(-3px)}
+.pillar-card.active{border-color:var(--accent);background:linear-gradient(180deg,oklch(0.26 0.05 250),var(--card))}
+.pillar-num{font-family:'Sora',sans-serif;font-size:13px;color:var(--ink-faint);margin-bottom:18px}
+.pillar-card .icon{margin-bottom:22px}
+.pillar-card h3{font-size:20px;margin-bottom:10px}
+.pillar-card p{font-size:14.5px;color:var(--ink-dim)}
+
+/* SHOWCASE */
+.showcase{padding:0 0 110px}
+.showcase-panel{display:grid;grid-template-columns:0.85fr 1.15fr;gap:0;background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.showcase-left{padding:44px}
+.tabs{display:flex;flex-direction:column;gap:8px;margin-top:28px}
+.tab{text-align:left;background:transparent;border:1px solid transparent;border-radius:10px;padding:14px 16px;cursor:pointer;color:var(--ink-dim);font-family:'Manrope',sans-serif}
+.tab:hover{background:oklch(1 0 0 / 0.03)}
+.tab.active{background:oklch(1 0 0 / 0.06);border-color:var(--line);color:var(--ink)}
+.tab-title{font-weight:700;font-size:15px;margin-bottom:3px}
+.tab-desc{font-size:13.5px;color:var(--ink-faint)}
+.tab.active .tab-desc{color:var(--ink-dim)}
+.showcase-right{padding:32px 32px 32px 0;display:flex;align-items:center}
+
+/* TESTIMONIAL */
+.testimonial{padding:0 0 110px}
+.t-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.t-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:30px}
+.t-quote{font-size:15px;line-height:1.55;color:var(--ink-dim)}
+.t-person{display:flex;align-items:center;gap:12px;margin-top:22px}
+.t-name{font-weight:700;font-size:14px}
+.t-role{font-size:12.5px;color:var(--ink-faint)}
+
+/* PRICING */
+.pricing{padding:0 0 110px}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.price-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:34px}
+.price-card.highlight{border-color:var(--accent);position:relative}
+.price-tag{position:absolute;top:-13px;left:34px;background:var(--accent);color:var(--accent-ink);font-size:12px;font-weight:700;padding:4px 12px;border-radius:100px}
+.price-plan{font-size:15px;color:var(--ink-faint);margin-bottom:10px}
+.price-amount{font-family:'Sora',sans-serif;font-size:38px;font-weight:700}
+.price-amount span{font-size:15px;color:var(--ink-faint);font-weight:500}
+.price-feats{list-style:none;margin:28px 0 32px;display:flex;flex-direction:column;gap:12px}
+.price-feats li{font-size:14px;color:var(--ink-dim);display:flex;gap:10px;align-items:flex-start}
+.price-feats li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent);margin-top:7px;flex-shrink:0}
+.price-card .btn{width:100%;justify-content:center}
+
+/* CTA BANNER */
+.cta-banner{padding:0 0 110px}
+.cta-box{background:linear-gradient(135deg,oklch(0.34 0.1 250),oklch(0.26 0.09 225));border-radius:24px;padding:70px;text-align:center;position:relative;overflow:hidden}
+.cta-box h2{font-size:38px;margin-bottom:14px;letter-spacing:-0.01em}
+.cta-box p{color:oklch(0.93 0.03 245);max-width:480px;margin:0 auto 32px;font-size:16px}
+.cta-actions{display:flex;gap:14px;justify-content:center}
+.cta-box .btn-outline{border-color:oklch(1 0 0 / 0.35);color:var(--ink)}
+
+/* FOOTER */
+footer{border-top:1px solid var(--line);padding:64px 0 32px;background:var(--bg-2)}
+.foot-grid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:40px;margin-bottom:48px}
+.foot-brand p{color:var(--ink-faint);font-size:14px;margin-top:14px;max-width:260px}
+.foot-col h4{font-size:13px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.06em;margin-bottom:16px}
+.foot-col a{display:block;color:var(--ink-dim);font-size:14.5px;margin-bottom:10px}
+.foot-col a:hover{color:var(--ink)}
+.foot-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:28px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-faint)}
+
+@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.float-1{animation:floatY 5s ease-in-out infinite}
+.float-2{animation:floatY 5s ease-in-out infinite -2.5s}
+.reveal.in{animation:revealIn .7s cubic-bezier(.16,.8,.3,1) forwards}
+@keyframes revealIn{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+.reveal-stagger.in > *{animation:revealIn .6s ease forwards}
+.reveal-stagger.in > *:nth-child(1){animation-delay:.05s}
+.reveal-stagger.in > *:nth-child(2){animation-delay:.15s}
+.reveal-stagger.in > *:nth-child(3){animation-delay:.25s}
+.reveal-stagger.in > *:nth-child(4){animation-delay:.35s}
+.hero h1,.hero .eyebrow,.hero p.sub,.hero-ctas,.hero-note{opacity:0;transform:translateY(16px);animation:heroIn .7s ease forwards}
+.hero .eyebrow{animation-delay:.05s}
+.hero h1{animation-delay:.15s}
+.hero p.sub{animation-delay:.28s}
+.hero-ctas{animation-delay:.4s}
+.hero-note{animation-delay:.5s}
+@keyframes heroIn{to{opacity:1;transform:translateY(0)}}
+.trust-logos{overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.trust-track{display:flex;gap:56px;animation:marquee 22s linear infinite;width:max-content}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.reveal,.reveal-stagger>*,.hero h1,.hero .eyebrow,.hero p.sub,.hero-ctas,.hero-note{opacity:1!important;transform:none!important;animation:none!important}.float-1,.float-2,.trust-track{animation:none!important}}
+
+@media(max-width:900px){
+  .wrap{padding:0 22px}
+  .nav-links{display:none}
+  .hero-grid,.stats-grid,.showcase-panel,.foot-grid{grid-template-columns:1fr}
+  .pillar-grid,.feature-grid,.price-grid{grid-template-columns:1fr}
+  .hero h1{font-size:38px}
+  .t-card{grid-template-columns:1fr}
+  .trust-row{flex-direction:column;gap:20px}
+  .trust-logos{flex-wrap:wrap;justify-content:center}
+  .cta-box{padding:44px 26px}
+}
+image-slot{min-width:0 !important;max-width:100% !important}
+html,body{overflow-x:hidden}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="index.html" class="logo logo-wrap"><image-slot src="assets/slots/logo-nav.webp" id="logo-nav" class="logo-mark" shape="rounded" radius="8" placeholder="Logo"></image-slot>Azuris Soluções em SST</a>
+      <div class="nav-links">
+        <a href="#recursos" class="btn btn-primary">Conheça nossos serviços</a>
+      </div>
+      <div class="nav-actions">
+        <a href="https://wa.me/5513996559306" target="_blank" class="btn btn-primary">Agendar demonstração</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" data-screen-label="hero">
+  <video id="hero-video" autoplay muted loop playsinline src="uploads/logoremover_1786680115497.mp4"></video>
+  <canvas id="wave-bg"></canvas>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Soluções em SST, gestão e tecnologia para pequenas e médias empresas</span>
+      <h1>Segurança, gestão e tecnologia <em>para sua empresa.</em></h1>
+      <p class="sub">A Azuris oferece soluções completas em Saúde e Segurança do Trabalho, combinando conhecimento técnico, tecnologia e atendimento especializado para ajudar sua empresa a prevenir riscos, atender às exigências legais e tornar seus processos mais eficientes.</p>
+      <div class="hero-ctas">
+        <a href="https://wa.me/5513996559306" target="_blank" class="btn btn-primary">Agendar demonstração</a>
+        <a href="#recursos" class="btn btn-primary">Conheça nossos serviços</a>
+      </div>
+    </div>
+    <div class="hero-visual" id="hero-visual">
+      <div class="float-card float-1">
+        <div class="float-value">Parceiro para sua gestão</div>
+        <div class="float-label">Gestão 360°</div>
+        <div class="float-delta">Da capacitação à tecnologia, soluções pensadas para simplificar sua rotina.</div>
+      </div>
+      <div class="float-card float-2">
+        <div class="float-value">9</div>
+        <div class="float-label">Soluções em SST</div>
+        <div class="float-delta">Treinamentos, consultoria, tecnologia, assistência técnica e muito mais.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="feature-strip" id="recursos">
+  <div class="wrap">
+    <h2 style="font-size:32px;letter-spacing:-0.01em;margin-bottom:32px">Nossas soluções</h2>
+    <div class="feature-grid reveal-stagger">
+      <div class="feature-item">
+        <image-slot src="assets/slots/icon-users.webp" id="icon-users" class="icon" shape="rounded" radius="14" placeholder="Ícone"></image-slot>
+        <h3>Ficha de EPI Digital</h3>
+        <div class="feature-div"></div>
+        <p>Assinatura de EPI de forma prática e rápida.</p>
+        <a href="servico-ficha-epi.html" class="feature-link">Saiba mais <span>→</span></a>
+      </div>
+      <div class="feature-item">
+        <image-slot src="assets/slots/icon-nrs.webp" id="icon-nrs" class="icon" shape="rounded" radius="14" placeholder="Ícone"></image-slot>
+        <h3>Treinamentos de Normas Regulamentadoras (NRs)</h3>
+        <div class="feature-div"></div>
+        <p>Capacitação das equipes conforme as exigências de cada NR.</p>
+        <a href="servico-treinamentos-nrs.html" class="feature-link">Saiba mais <span>→</span></a>
+      </div>
+      <div class="feature-item">
+        <image-slot src="assets/slots/icon-brigada.webp" id="icon-brigada" class="icon" shape="rounded" radius="14" placeholder="Ícone"></image-slot>
+        <h3>Treinamento em emergências</h3>
+        <div class="feature-div"></div>
+        <p>Treinamento de Brigada de emergência e primeiros socorros com profissionais altamente qualificados.</p>
+        <a href="servico-emergencias.html" class="feature-link">Saiba mais <span>→</span></a>
+      </div>
+      <div class="feature-item">
+        <image-slot src="assets/slots/icon-ra.webp" id="icon-ra" class="icon" shape="rounded" radius="14" placeholder="Ícone"></image-slot>
+        <h3>Treinamentos com Realidade Aumentada - VR</h3>
+        <div class="feature-div"></div>
+        <p>Simulações imersivas que fixam o aprendizado na prática.</p>
+        <a href="servico-realidade-aumentada.html" class="feature-link">Saiba mais <span>→</span></a>
+      </div>
+      <div class="feature-item">
+        <image-slot src="assets/slots/icon-juridico.webp" id="icon-juridico" class="icon" shape="rounded" radius="14" placeholder="Ícone"></image-slot>
+        <h3>Consultoria e Assessoria Jurídica Trabalhista</h3>
+        <div class="feature-div"></div>
+        <p>Orientação preventiva e suporte em demandas trabalhistas.</p>
+        <a href="servico-juridico.html" class="feature-link">Saiba mais <span>→</span></a>
+      </div>
+      <div class="feature-item">
+        <image-slot src="assets/slots/icon-pericial.webp" id="icon-pericial" class="icon" shape="rounded" radius="14" placeholder="Ícone"></image-slot>
+        <h3>Assistência Técnica Pericial</h3>
+        <div class="feature-div"></div>
+        <p>Laudos e acompanhamento técnico em perícias judiciais.</p>
+        <a href="servico-pericial.html" class="feature-link">Saiba mais <span>→</span></a>
+      </div>
+      <div class="feature-item">
+        <image-slot src="assets/slots/icon-consultoria.webp" id="icon-consultoria" class="icon" shape="rounded" radius="14" placeholder="Ícone"></image-slot>
+        <h3>Consultoria em Saúde e Segurança do Trabalho</h3>
+        <div class="feature-div"></div>
+        <p>Diagnóstico, programas e acompanhamento contínuo em SST.</p>
+        <a href="servico-consultoria-sst.html" class="feature-link">Saiba mais <span>→</span></a>
+      </div>
+      <div class="feature-item">
+        <image-slot src="assets/slots/icon-plataformas.webp" id="icon-plataformas" class="icon" shape="rounded" radius="14" placeholder="Ícone"></image-slot>
+        <h3>Plataformas de Gestão e Processos em SST</h3>
+        <div class="feature-div"></div>
+        <p>Sistemas que organizam toda a rotina de SST da empresa.</p>
+        <a href="servico-plataformas-sst.html" class="feature-link">Saiba mais <span>→</span></a>
+      </div>
+      <div class="feature-item">
+        <image-slot src="assets/slots/icon-apps.webp" id="icon-apps" class="icon" shape="rounded" radius="14" placeholder="Ícone"></image-slot>
+        <h3>Desenvolvimento de Aplicativos Personalizados</h3>
+        <div class="feature-div"></div>
+        <p>Soluções sob medida para os processos da sua operação.</p>
+        <a href="servico-aplicativos.html" class="feature-link">Saiba mais <span>→</span></a>
+      </div>
+      <div class="feature-item">
+        <image-slot src="assets/slots/icon-documentos.webp" id="icon-documentos" class="icon" shape="rounded" radius="14" placeholder="Ícone"></image-slot>
+        <h3>Elaboração e Revisão de Documentos de SST</h3>
+        <div class="feature-div"></div>
+        <p>Precisa de um documento específico para atender uma demanda do seu cliente? Nós ajudamos!</p>
+        <a href="servico-documentos.html" class="feature-link">Saiba mais <span>→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <video id="stats-video" autoplay muted loop playsinline src="uploads/02178615572813500000000000000000000ffffac182786e8cba8.mp4"></video>
+  <div class="wrap stats-grid">
+    <div>
+      <span class="eyebrow">Por que somos a sua melhor escolha</span>
+      <h2>SST de qualidade não precisa ser caro!</h2>
+      <p>Pequenas e médias empresas também precisam de <strong>tecnologia, organização e suporte especializado</strong> em Saúde e Segurança do Trabalho — mas nem sempre podem investir em grandes equipes ou sistemas complexos.</p>
+      <p><strong>A Azuris nasceu para mudar essa realidade.</strong></p>
+      <p>Criamos soluções <strong>acessíveis, inteligentes e personalizadas</strong>, unindo tecnologia e conhecimento técnico para <strong>simplificar a gestão de SST</strong>, otimizar processos e <strong>reduzir custos</strong>.</p>
+      <p><strong>Mais tecnologia. Mais controle. Menos burocracia.</strong></p>
+      <p>Soluções pensadas para <strong>a realidade e o orçamento da sua empresa</strong>.</p>
+    </div>
+    <div class="stat-row reveal-stagger">
+      <div><div class="stat-num" data-count="834" data-suffix=" mil+">0</div><div class="stat-cap">Acidentes de trabalho em 2024</div></div>
+      <div><div class="stat-num" data-count="138" data-suffix=" mil+">0</div><div class="stat-cap">Novos processos por acidentes de trabalho</div></div>
+      <div><div class="stat-num">31.981</div><div class="stat-cap">Mortes registradas entre 2012 e 2024</div></div>
+      <div><div class="stat-num">6,4 milhões</div><div class="stat-cap">Acidentes registrados em 10 anos</div></div>
+    </div>
+    <p class="stat-note"><b>O problema é grande</b> <span>→</span> <b>o risco é real</b> <span>→</span> <b>as consequências existem</b> <span>→</span> <b class="last">a Azuris oferece a solução.</b></p>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="wrap">
+    <div class="cta-box">
+      <h2>Pronto para simplificar a operação?</h2>
+      <p>Agende uma demonstração de 20 minutos e veja nossas soluções aplicadas ao seu processo</p>
+      <div class="cta-actions">
+        <a href="https://wa.me/5513996559306" target="_blank" class="btn btn-primary">Agendar demonstração</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="logo"><image-slot src="assets/slots/logo-footer.webp" id="logo-footer" class="logo-mark" shape="rounded" radius="7" placeholder="Logo"></image-slot>Azuris Soluções em SST</div>
+        <p>Treinamentos, consultoria e tecnologia em Saúde e Segurança do Trabalho.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Soluções</h4>
+        <a href="servico-colaboradores.html">Ficha de EPI Digital</a>
+        <a href="servico-treinamentos-nrs.html">Treinamentos em NRs</a>
+        <a href="servico-consultoria-sst.html">Consultoria em SST</a>
+        <a href="servico-plataformas-sst.html">Plataformas de Gestão</a>
+      </div>
+      <div class="foot-col">
+        <h4>Empresa</h4>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+      </div>
+      <div class="foot-col">
+        <h4>Legal</h4>
+        <a href="#">Privacidade</a>
+        <a href="#">Termos</a>
+        <a href="#">Segurança</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Azuris Soluções em SST. Todos os direitos reservados.</span>
+      <span>Soluções em SST para pequenas e médias empresas.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+  t.classList.add('active');
+}));
+
+document.querySelectorAll('.cta-banner,.stats,.feature-strip').forEach(s=>s.classList.add('reveal'));
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+},{threshold:.15});
+document.querySelectorAll('.reveal,.reveal-stagger').forEach(el=>io.observe(el));
+addEventListener('load',()=>{document.querySelectorAll('.reveal,.reveal-stagger').forEach(el=>{const r=el.getBoundingClientRect();if(r.top<innerHeight&&r.bottom>0)el.classList.add('in');});});
+
+function animateCount(el){
+  const target=parseFloat(el.dataset.count);
+  const decimals=parseInt(el.dataset.decimals||'0');
+  const suffix=el.dataset.suffix||'';
+  const dur=1200; const start=performance.now();
+  function tick(now){
+    const p=Math.min(1,(now-start)/dur);
+    const eased=1-Math.pow(1-p,3);
+    const val=(target*eased).toFixed(decimals).replace('.',',');
+    el.textContent=val+suffix;
+    if(p<1) requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+}
+document.querySelectorAll('[data-count]').forEach(animateCount);
+</script>
+<script>
+(function(){
+  const wrap=document.getElementById('hero-visual');
+  const img=document.getElementById('hero-shot-img');
+  if(!wrap||!img) return;
+  const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce) return;
+  let rx=0,ry=0,tx=0,ty=0;
+  wrap.addEventListener('mousemove',e=>{
+    const r=wrap.getBoundingClientRect();
+    const px=(e.clientX-r.left)/r.width-0.5;
+    const py=(e.clientY-r.top)/r.height-0.5;
+    tx=px*-14; ty=py*10;
+  });
+  wrap.addEventListener('mouseleave',()=>{tx=0;ty=0;});
+  function loop(){
+    rx+=(ty-rx)*0.08; ry+=(tx-ry)*0.08;
+    img.style.transform=`rotateX(${rx}deg) rotateY(${ry}deg)`;
+    requestAnimationFrame(loop);
+  }
+  loop();
+})();
+const waveCanvas=document.getElementById('wave-bg');
+const wctx=waveCanvas.getContext('2d');
+let mx=0,my=0,tmx=0,tmy=0;
+function sizeCanvas(){
+  const r=waveCanvas.parentElement.getBoundingClientRect();
+  waveCanvas.width=r.width; waveCanvas.height=r.height;
+}
+sizeCanvas();
+window.addEventListener('resize',sizeCanvas);
+waveCanvas.parentElement.addEventListener('mousemove',e=>{
+  const r=waveCanvas.getBoundingClientRect();
+  tmx=(e.clientX-r.left)/r.width-0.5;
+  tmy=(e.clientY-r.top)/r.height-0.5;
+});
+const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+let t=0;
+function drawWave(){
+  if(reduceMotion) return;
+  mx+=(tmx-mx)*0.04; my+=(tmy-my)*0.04;
+  const w=waveCanvas.width,h=waveCanvas.height;
+  wctx.clearRect(0,0,w,h);
+  const rows=14;
+  for(let r=0;r<rows;r++){
+    const py=h*0.32+r*(h*0.62/rows);
+    const depth=r/rows;
+    wctx.beginPath();
+    const amp=10+depth*26;
+    const speed=0.6+depth*0.4;
+    const tilt=my*40*depth;
+    for(let x=0;x<=w;x+=16){
+      const wobble=Math.sin(x*0.012+t*speed+r*0.6)*amp;
+      const skew=mx*60*depth*(x/w-0.5);
+      const y=py+wobble+tilt+skew;
+      if(x===0) wctx.moveTo(x,y); else wctx.lineTo(x,y);
+    }
+    const alpha=0.05+depth*0.16;
+    wctx.strokeStyle=`oklch(0.7 0.15 245 / ${alpha})`;
+    wctx.lineWidth=1.2;
+    wctx.stroke();
+  }
+  t+=0.012;
+  requestAnimationFrame(drawWave);
+}
+drawWave();
+</script>
+</body>
+</html>

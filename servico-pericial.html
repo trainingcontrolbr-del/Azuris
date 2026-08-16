@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assistência Técnica Pericial em Segurança do Trabalho | Azuris SST</title>
+<meta name="description" content="Assistência técnica pericial em SST: análise técnica do processo, acompanhamento de diligências, análise de laudos e pareceres, com equipe multidisciplinar definida conforme cada demanda.">
+<script src="image-slot.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:oklch(0.16 0.02 255);--bg-2:oklch(0.20 0.024 255);--card:oklch(0.22 0.028 255);--line:oklch(1 0 0 / 0.09);--ink:oklch(0.97 0.008 250);--ink-dim:oklch(0.78 0.018 250);--ink-faint:oklch(0.58 0.02 250);--accent:oklch(0.7 0.15 245);--accent-2:oklch(0.76 0.13 215);--accent-ink:oklch(0.15 0.03 250)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Manrope',sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;text-wrap:pretty}
+h1,h2,h3,h4{font-family:'Sora',sans-serif}
+a{color:var(--accent);text-decoration:none}
+a:hover{color:oklch(0.8 0.14 245)}
+img{display:block;max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 40px}
+.btn{display:inline-flex;align-items:center;gap:8px;white-space:nowrap;padding:14px 26px;border-radius:8px;font-weight:600;font-size:15px;border:1px solid transparent;cursor:pointer;transition:transform .15s ease,opacity .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--accent);color:var(--accent-ink)}
+.btn-primary:hover{color:var(--accent-ink);opacity:.92}
+.btn-outline{border-color:var(--line);color:var(--ink)}
+.btn-outline:hover{color:var(--ink);border-color:oklch(1 0 0 / 0.25)}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+header{position:sticky;top:0;z-index:50;background:var(--bg-2);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Sora',sans-serif;font-weight:700;font-size:19px;color:var(--ink)}
+.logo:hover{color:var(--ink)}
+.logo-mark{width:34px;height:34px;flex-shrink:0;background:transparent}
+.logo-mark::part(frame){background:transparent;border:none;border-radius:0;box-shadow:none}
+.logo-mark::part(image){border-radius:0;object-fit:contain}
+.logo-mark::part(ring){display:none}
+.icon:not([data-filled]){width:124px!important;height:124px!important}
+.logo-mark:not([data-filled])::part(empty){display:none!important}
+.logo-mark:not([data-filled]){display:none!important}
+.foot-grid{align-items:start}
+.nav-actions{display:flex;align-items:center;gap:14px}
+.nav-actions .back{font-size:14px;color:var(--ink-dim)}
+.nav-actions .back:hover{color:var(--ink)}
+.nav-actions .btn{padding:10px 20px;font-size:14px}
+
+.hero{position:relative;padding:88px 0 76px;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-220px;right:-180px;width:660px;height:660px;background:radial-gradient(circle,oklch(0.42 0.14 245 / 0.4),transparent 70%);filter:blur(10px);pointer-events:none}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,0.95fr);gap:56px;align-items:center}
+.hero h1{font-size:50px;line-height:1.08;font-weight:700;letter-spacing:-0.02em;margin:18px 0 22px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p.sub{font-size:18px;color:var(--ink-dim);max-width:560px;margin-bottom:18px}
+.hero p.intro{font-size:15.5px;color:var(--ink-faint);max-width:560px;line-height:1.65;margin-bottom:30px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:30px}
+.trust-chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{display:inline-flex;align-items:center;gap:9px;font-size:13px;font-weight:600;color:var(--ink-dim);border:1px solid var(--line);background:oklch(1 0 0 / 0.03);border-radius:100px;padding:9px 16px}
+.chip::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0}
+.hero-visual{position:relative;min-width:0;display:flex;flex-direction:column;gap:18px}
+.hero-shot{width:100%;height:340px;border-radius:20px;border:1px solid var(--line);background:var(--card);box-shadow:0 40px 70px -30px oklch(0 0 0 / 0.65)}
+.hero-shot::part(frame){border-radius:20px;background:linear-gradient(150deg,oklch(0.24 0.04 250),oklch(0.19 0.026 255))}
+.hero-shot.video-slot{position:relative;overflow:hidden;background:linear-gradient(150deg,oklch(0.24 0.04 250),oklch(0.19 0.026 255))}
+.video-slot video,.video-slot img.media-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:none}
+.video-slot.has-video video{display:block}
+.video-slot.has-image img.media-img{display:block}
+.video-slot.has-image .video-drop{display:none}
+.video-slot.has-image:hover .video-clear{display:block}
+.video-drop{position:absolute;inset:0;z-index:3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;padding:28px;cursor:pointer;transition:background .2s ease}
+.video-drop:hover,.video-drop.drag{background:oklch(0.7 0.15 245 / 0.1)}
+.video-slot.has-video .video-drop{display:none}
+.video-drop input{display:none}
+.vd-title{font-family:'Sora',sans-serif;font-weight:700;font-size:16px;color:var(--accent)}
+.vd-sub{font-size:13px;color:var(--ink-dim);max-width:280px;line-height:1.5}
+.video-clear{display:none;position:absolute;z-index:4;bottom:14px;right:14px;font-family:'Manrope',sans-serif;font-size:12px;font-weight:600;color:var(--ink);background:oklch(0.16 0.02 255 / 0.7);border:1px solid oklch(1 0 0 / 0.2);border-radius:100px;padding:7px 14px;cursor:pointer;backdrop-filter:blur(6px)}
+.video-slot.has-video:hover .video-clear{display:block}
+.float-card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;box-shadow:0 20px 40px -18px oklch(0 0 0 / 0.55);max-width:330px;align-self:flex-end}
+.float-value{font-family:'Sora',sans-serif;font-size:15px;font-weight:700;color:var(--accent);margin-bottom:6px}
+.float-delta{font-size:13px;color:var(--ink-dim);line-height:1.45}
+
+section.block{padding:0 0 104px}
+.section-head{max-width:780px;margin-bottom:48px}
+.section-head h2{font-size:36px;letter-spacing:-0.015em;margin-top:14px;line-height:1.15}
+.section-head h2 em{font-style:normal;color:var(--accent)}
+.section-head p{color:var(--ink-dim);font-size:17px;margin-top:16px;line-height:1.6}
+.section-head p strong{color:var(--ink);font-weight:700}
+
+.reality{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:88px 0;margin-bottom:104px}
+.reality-grid{display:grid;grid-template-columns:1.05fr 0.95fr;gap:56px;align-items:center}
+.reality h2{font-size:38px;line-height:1.12;letter-spacing:-0.02em;margin-top:16px}
+.reality h2 em{font-style:normal;color:var(--accent)}
+.reality p{color:var(--ink-dim);font-size:17px;line-height:1.65;margin-top:20px}
+.reality p strong{color:var(--ink)}
+
+.mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.mini{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;transition:border-color .2s ease,transform .2s ease}
+.mini:hover{border-color:oklch(0.7 0.15 245 / 0.45);transform:translateY(-3px)}
+.mini .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);margin-top:7px;flex-shrink:0;box-shadow:0 0 0 5px oklch(0.7 0.15 245 / 0.14)}
+.mini h3{font-size:15.5px;font-weight:600;font-family:'Manrope',sans-serif;line-height:1.45;color:var(--ink)}
+.disclaimer{margin-top:26px;border:1px solid var(--line);background:oklch(1 0 0 / 0.03);border-radius:14px;padding:22px 24px;font-size:14.5px;color:var(--ink-dim);line-height:1.6}
+.disclaimer strong{color:var(--ink)}
+.pull{margin-top:26px;font-family:'Sora',sans-serif;font-weight:600;font-size:19px;line-height:1.4;color:var(--ink);padding:24px 26px;border-radius:16px;border:1px solid oklch(0.7 0.15 245 / 0.35);background:oklch(0.7 0.15 245 / 0.1)}
+.pull em{font-style:normal;color:var(--accent)}
+
+.flow-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.flow-step{position:relative;background:linear-gradient(150deg,oklch(0.23 0.03 255 / 0.92),oklch(0.18 0.024 255 / 0.94));border:1px solid var(--line);border-radius:16px;padding:28px 26px;transition:border-color .25s ease,transform .25s ease}
+.flow-step:hover{border-color:oklch(0.7 0.15 245 / 0.5);transform:translateY(-3px)}
+.flow-num{font-family:'Sora',sans-serif;font-size:32px;font-weight:700;color:oklch(0.7 0.15 245 / 0.45);line-height:1;margin-bottom:14px}
+.flow-step h3{font-size:18px;margin-bottom:9px}
+.flow-step p{font-size:14.5px;color:var(--ink-dim);line-height:1.55}
+
+.spec-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.spec{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px 26px;transition:border-color .25s ease,transform .25s ease,box-shadow .25s ease}
+.spec:hover{border-color:oklch(0.7 0.15 245 / 0.5);transform:translateY(-4px);box-shadow:0 22px 44px -26px oklch(0.55 0.16 250 / 0.6)}
+.spec .icon{width:48px;height:48px;border-radius:12px;background:transparent;margin-bottom:18px}
+.spec .icon::part(frame){background:transparent;border:none;box-shadow:none}
+.spec h3{font-size:17.5px;line-height:1.3;margin-bottom:9px}
+.spec p{font-size:14px;color:var(--ink-dim);line-height:1.55}
+
+.authority{padding:0 0 104px}
+.auth-box{position:relative;overflow:hidden;background:linear-gradient(135deg,oklch(0.34 0.1 250),oklch(0.24 0.08 225));border-radius:24px;padding:64px}
+.auth-box::before{content:"";position:absolute;top:-160px;right:-120px;width:520px;height:520px;background:radial-gradient(circle,oklch(0.75 0.13 220 / 0.28),transparent 70%);pointer-events:none}
+.auth-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr 0.9fr;gap:52px;align-items:center}
+.auth-box h2{font-size:34px;line-height:1.15;letter-spacing:-0.02em;margin:16px 0 20px}
+.auth-box p{color:oklch(0.94 0.025 245);font-size:16.5px;line-height:1.65}
+.auth-box p+p{margin-top:14px}
+.auth-box p strong{color:#fff;font-weight:700}
+.pillars{display:grid;grid-template-columns:1fr;gap:12px}
+.pillar{display:flex;align-items:center;gap:14px;background:oklch(0.16 0.02 255 / 0.5);border:1px solid oklch(1 0 0 / 0.18);border-radius:14px;padding:20px 22px;backdrop-filter:blur(6px)}
+.pillar-num{font-family:'Sora',sans-serif;font-size:13px;font-weight:700;color:oklch(0.86 0.09 220);flex-shrink:0}
+.pillar-title{font-family:'Sora',sans-serif;font-size:17px;font-weight:700;line-height:1.25;letter-spacing:-0.01em}
+
+.case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.case{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 24px;transition:border-color .2s ease,transform .2s ease}
+.case:hover{border-color:oklch(0.7 0.15 245 / 0.45);transform:translateY(-3px)}
+.case .num{font-family:'Sora',sans-serif;font-size:12.5px;font-weight:700;letter-spacing:.06em;color:var(--accent);background:oklch(0.7 0.15 245 / 0.12);border:1px solid oklch(0.7 0.15 245 / 0.28);border-radius:8px;padding:7px 9px;flex-shrink:0;line-height:1}
+.case h3{font-size:15.5px;font-weight:600;font-family:'Manrope',sans-serif;line-height:1.45;color:var(--ink)}
+
+.tailor-grid{display:grid;grid-template-columns:0.95fr 1.05fr;gap:56px;align-items:center}
+.tailor-panel{border:1px solid var(--line);border-radius:20px;background:var(--card);padding:14px;box-shadow:0 40px 70px -34px oklch(0 0 0 / 0.7)}
+.tailor-shot{width:100%;height:310px;border-radius:14px;background:transparent}
+.tailor-shot::part(frame){border-radius:14px;background:linear-gradient(150deg,oklch(0.25 0.045 250),oklch(0.19 0.026 255))}
+.tailor-list{display:flex;flex-direction:column;gap:12px;margin-top:24px}
+.tl-item{display:flex;gap:14px;align-items:flex-start;border:1px solid var(--line);background:oklch(1 0 0 / 0.03);border-radius:14px;padding:18px 20px}
+.tl-item .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);margin-top:7px;flex-shrink:0;box-shadow:0 0 0 5px oklch(0.7 0.15 245 / 0.14)}
+.tl-item h3{font-size:16px;margin-bottom:5px}
+.tl-item p{font-size:14.5px;color:var(--ink-dim);line-height:1.55}
+
+.cta-banner{padding:0 0 110px}
+.cta-box{background:linear-gradient(135deg,oklch(0.34 0.1 250),oklch(0.26 0.09 225));border-radius:24px;padding:70px;text-align:center}
+.cta-box h2{font-size:36px;margin-bottom:14px;letter-spacing:-0.015em;line-height:1.15;max-width:840px;margin-left:auto;margin-right:auto}
+.cta-box p{color:oklch(0.93 0.03 245);max-width:680px;margin:0 auto 32px;font-size:16.5px;line-height:1.6}
+.cta-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.cta-box .btn-outline{border-color:oklch(1 0 0 / 0.35);color:var(--ink)}
+
+footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg-2)}
+.foot-grid{display:grid;grid-template-columns:1.4fr repeat(2,1fr);gap:40px;margin-bottom:44px}
+.foot-brand p{color:var(--ink-faint);font-size:14px;margin-top:14px;max-width:300px;line-height:1.6}
+.foot-col h4{font-size:13px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.06em;margin-bottom:16px;font-family:'Sora',sans-serif}
+.foot-col a{display:block;color:var(--ink-dim);font-size:14.5px;margin-bottom:10px}
+.foot-col a:hover{color:var(--ink)}
+.foot-bottom{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding-top:28px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-faint)}
+
+@keyframes revealIn{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:translateY(0)}}
+.reveal.in{animation:revealIn .7s cubic-bezier(.16,.8,.3,1) both}
+.hero h1,.hero .eyebrow,.hero p.sub,.hero p.intro,.hero-ctas,.trust-chips{opacity:0;transform:translateY(16px);animation:revealIn .7s ease forwards}
+.hero .eyebrow{animation-delay:.05s}.hero h1{animation-delay:.15s}.hero p.sub{animation-delay:.26s}.hero p.intro{animation-delay:.34s}.hero-ctas{animation-delay:.44s}.trust-chips{animation-delay:.54s}
+@media(prefers-reduced-motion:reduce){.reveal,.hero h1,.hero .eyebrow,.hero p.sub,.hero p.intro,.hero-ctas,.trust-chips{opacity:1!important;transform:none!important;animation:none!important}}
+
+@media(max-width:1000px){.spec-grid,.mini-grid,.case-grid,.flow-grid{grid-template-columns:1fr 1fr}.auth-grid,.reality-grid,.tailor-grid{grid-template-columns:1fr;gap:36px}.auth-box{padding:44px 32px}}
+@media(max-width:760px){
+  .wrap{padding:0 22px}
+  .hero{padding:56px 0 56px}
+  .hero-grid{grid-template-columns:1fr;gap:36px}
+  .hero h1{font-size:33px}
+  .hero p.sub{font-size:16.5px}
+  .hero-shot{height:230px}
+  .float-card{max-width:none;align-self:stretch}
+  .section-head h2,.reality h2{font-size:27px}
+  .spec-grid,.mini-grid,.case-grid,.flow-grid,.foot-grid{grid-template-columns:1fr}
+  .spec,.flow-step{padding:26px 22px}
+  .cta-box{padding:44px 24px}
+  .cta-box h2,.auth-box h2{font-size:26px}
+  .pull{font-size:17px}
+  .nav-actions .back{display:none}
+  section.block{padding:0 0 72px}
+  .reality{padding:64px 0;margin-bottom:72px}
+}
+image-slot{min-width:0 !important;max-width:100% !important}
+html,body{overflow-x:hidden}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="index.html" class="logo"><image-slot src="assets/slots/logo-nav.webp" id="logo-nav-per" class="logo-mark" shape="rounded" radius="8" placeholder="Logo"></image-slot>Azuris Soluções em SST</a>
+      <div class="nav-actions">
+        <a href="index.html#recursos" class="back">← Voltar</a>
+        <a href="https://wa.me/5513996559306" target="_blank" class="btn btn-primary">Fale com um especialista</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" data-screen-label="hero-pericial">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Assistência Técnica Pericial</span>
+      <h1>Assistência Técnica Pericial para <em>proteger tecnicamente sua empresa.</em></h1>
+      <p class="sub">Suporte técnico especializado para proteger os interesses da sua empresa em avaliações e processos periciais.</p>
+      <p class="intro">Com a assistência técnica pericial, sua empresa conta com profissionais especializados para analisar tecnicamente situações relacionadas a perícias, acompanhar diligências, avaliar documentos e fornecer subsídios técnicos para uma atuação mais segura e estratégica.</p>
+      <div class="hero-ctas">
+        <a href="https://wa.me/5513996559306" target="_blank" class="btn btn-primary">Fale com um especialista</a>
+        <a href="#como-funciona" class="btn btn-outline">Como funciona</a>
+      </div>
+      <div class="trust-chips">
+        <span class="chip">Equipe multidisciplinar</span>
+        <span class="chip">Análise técnica de laudos</span>
+        <span class="chip">Acompanhamento de diligências</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div id="per-hero-shot" class="hero-shot video-slot"><video autoplay muted loop playsinline></video><img class="media-img" alt=""><label class="video-drop"><span class="vd-title">Enviar imagem</span><span class="vd-sub">Clique ou arraste uma foto (.jpg, .png) de análise técnica / ambiente corporativo</span><input type="file" accept="image/*,video/*"></label><button type="button" class="video-clear">Trocar mídia</button></div>
+      <div class="float-card">
+        <div class="float-value">Atuação técnica, integrada ao jurídico</div>
+        <div class="float-delta">Nossa atuação é técnica e especializada, complementar ao trabalho do advogado — sem substituí-lo.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reality reveal" data-screen-label="o-que-e">
+  <div class="wrap">
+    <div class="reality-grid">
+      <div>
+        <span class="eyebrow">O que é assistência técnica pericial</span>
+        <h2>Suporte técnico especializado <em>durante toda a perícia.</em></h2>
+        <p>A assistência técnica pericial é o acompanhamento e o suporte técnico especializado oferecido à empresa durante uma perícia, auxiliando na análise dos aspectos técnicos envolvidos e na interpretação das informações apresentadas no processo.</p>
+        <p><strong>Trata-se de uma atuação técnica e especializada</strong>, que pode ser integrada ao trabalho jurídico da empresa — sem substituir a atuação do advogado.</p>
+      </div>
+      <image-slot id="per-oque-shot" class="hero-shot" style="height:300px" shape="rounded" radius="20" placeholder="Foto: análise documental / profissional avaliando laudo técnico"></image-slot>
+    </div>
+    <div class="mini-grid" style="margin-top:56px">
+      <div class="mini"><span class="dot"></span><h3>Análise técnica do processo e dos documentos relacionados</h3></div>
+      <div class="mini"><span class="dot"></span><h3>Identificação dos aspectos técnicos relevantes para a perícia</h3></div>
+      <div class="mini"><span class="dot"></span><h3>Preparação técnica para a realização da perícia</h3></div>
+      <div class="mini"><span class="dot"></span><h3>Acompanhamento da diligência pericial</h3></div>
+      <div class="mini"><span class="dot"></span><h3>Análise das condições de trabalho e dos ambientes envolvidos</h3></div>
+      <div class="mini"><span class="dot"></span><h3>Avaliação de documentos, registros e evidências técnicas</h3></div>
+      <div class="mini"><span class="dot"></span><h3>Formulação de quesitos técnicos</h3></div>
+      <div class="mini"><span class="dot"></span><h3>Análise do laudo pericial</h3></div>
+      <div class="mini"><span class="dot"></span><h3>Identificação de possíveis inconsistências técnicas</h3></div>
+      <div class="mini"><span class="dot"></span><h3>Elaboração de parecer técnico</h3></div>
+      <div class="mini"><span class="dot"></span><h3>Apoio na apresentação de manifestações e esclarecimentos técnicos</h3></div>
+      <div class="mini"><span class="dot"></span><h3>Atuação conforme as características de cada caso</h3></div>
+    </div>
+  </div>
+</section>
+
+<section class="block reveal" id="como-funciona" data-screen-label="como-funciona">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Como funciona</span>
+      <h2>Do primeiro contato ao parecer técnico</h2>
+      <p>Um caminho estruturado, adaptado às características e ao momento processual de cada demanda.</p>
+    </div>
+    <div class="flow-grid">
+      <div class="flow-step"><div class="flow-num">01</div><h3>Análise do caso</h3><p>Nossa equipe realiza uma análise inicial das informações, documentos e circunstâncias relacionadas à demanda.</p></div>
+      <div class="flow-step"><div class="flow-num">02</div><h3>Avaliação técnica</h3><p>São identificados os principais pontos técnicos envolvidos e os aspectos que precisam ser avaliados durante a perícia.</p></div>
+      <div class="flow-step"><div class="flow-num">03</div><h3>Preparação</h3><p>A equipe técnica estrutura as informações necessárias, avalia documentos e prepara os elementos técnicos pertinentes ao caso.</p></div>
+      <div class="flow-step"><div class="flow-num">04</div><h3>Acompanhamento da perícia</h3><p>Quando aplicável, o profissional acompanha a diligência pericial, observando os aspectos técnicos relevantes e contribuindo para que as informações sejam devidamente analisadas.</p></div>
+      <div class="flow-step"><div class="flow-num">05</div><h3>Análise do laudo</h3><p>Após a perícia, é realizada uma análise técnica do laudo apresentado, verificando os fundamentos, informações e conclusões apresentadas.</p></div>
+      <div class="flow-step"><div class="flow-num">06</div><h3>Parecer e suporte técnico</h3><p>Quando necessário, apresentamos pareceres, esclarecimentos, quesitos complementares e demais subsídios técnicos pertinentes à demanda.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block reveal" data-screen-label="especialidades">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Por que contratar a Azuris</span>
+      <h2>Uma equipe multidisciplinar para <em>cada desafio técnico.</em></h2>
+      <p>Não trabalhamos com uma abordagem única para todos os casos. Contamos com acesso a profissionais de diferentes áreas, o que permite direcionar o especialista mais adequado de acordo com as características e necessidades de cada demanda.</p>
+    </div>
+    <div class="spec-grid">
+      <div class="spec"><image-slot id="per-s1" class="icon" shape="rounded" radius="12" placeholder="Ícone"></image-slot><h3>Engenheiros de Segurança do Trabalho</h3><p>Análise técnica de riscos, ambientes e medidas de controle.</p></div>
+      <div class="spec"><image-slot id="per-s2" class="icon" shape="rounded" radius="12" placeholder="Ícone"></image-slot><h3>Técnicos de Segurança do Trabalho</h3><p>Levantamento de campo e verificação das condições de trabalho.</p></div>
+      <div class="spec"><image-slot id="per-s3" class="icon" shape="rounded" radius="12" placeholder="Ícone"></image-slot><h3>Médicos do Trabalho</h3><p>Aspectos técnicos relacionados à saúde ocupacional.</p></div>
+      <div class="spec"><image-slot id="per-s4" class="icon" shape="rounded" radius="12" placeholder="Ícone"></image-slot><h3>Enfermeiros do Trabalho</h3><p>Apoio técnico em registros e rotinas de saúde ocupacional.</p></div>
+      <div class="spec"><image-slot id="per-s5" class="icon" shape="rounded" radius="12" placeholder="Ícone"></image-slot><h3>Profissionais de Higiene Ocupacional</h3><p>Avaliação de agentes e exposições no ambiente de trabalho.</p></div>
+      <div class="spec"><image-slot id="per-s6" class="icon" shape="rounded" radius="12" placeholder="Ícone"></image-slot><h3>Ergonomistas</h3><p>Análise de aspectos ergonômicos das atividades e postos de trabalho.</p></div>
+      <div class="spec"><image-slot id="per-s7" class="icon" shape="rounded" radius="12" placeholder="Ícone"></image-slot><h3>Engenheiros</h3><p>Avaliação de aspectos técnicos de instalações, processos e equipamentos.</p></div>
+      <div class="spec"><image-slot id="per-s8" class="icon" shape="rounded" radius="12" placeholder="Ícone"></image-slot><h3>Profissionais especializados em SST</h3><p>Suporte técnico em documentos, programas e rotinas de segurança.</p></div>
+      <div class="spec"><image-slot id="per-s9" class="icon" shape="rounded" radius="12" placeholder="Ícone"></image-slot><h3>Especialistas em avaliações e análises técnicas</h3><p>Interpretação de dados, laudos e evidências técnicas.</p></div>
+    </div>
+    <div class="disclaimer"><strong>A composição da equipe é definida conforme a natureza e as necessidades de cada demanda.</strong> Isso significa que não todos os profissionais atuam em todos os casos — a escolha das especialidades envolvidas depende dos aspectos técnicos que precisam ser analisados.</div>
+  </div>
+</section>
+
+<section class="authority reveal" data-screen-label="diferencial">
+  <div class="wrap">
+    <div class="auth-box">
+      <div class="auth-grid">
+        <div>
+          <span class="eyebrow" style="color:oklch(0.88 0.09 220)">Nosso diferencial</span>
+          <h2>O seu caso pode exigir mais de uma especialidade. A nossa estrutura está preparada para isso.</h2>
+          <p>Determinadas demandas periciais envolvem diferentes aspectos técnicos ao mesmo tempo — ambiente, exposição, saúde ocupacional, ergonomia e documentação. <strong>Contar com uma estrutura multidisciplinar permite uma análise mais ampla e criteriosa.</strong></p>
+          <p>Antes de definir a estratégia técnica adequada, buscamos compreender a realidade da empresa, sua operação e a demanda apresentada.</p>
+        </div>
+        <div class="pillars">
+          <div class="pillar"><span class="pillar-num">01</span><span class="pillar-title">Experiência técnica</span></div>
+          <div class="pillar"><span class="pillar-num">02</span><span class="pillar-title">Visão multidisciplinar</span></div>
+          <div class="pillar"><span class="pillar-num">03</span><span class="pillar-title">Análise personalizada</span></div>
+          <image-slot id="per-equipe" style="width:100%;height:150px;border-radius:14px" shape="rounded" radius="14" placeholder="Foto da equipe técnica em reunião de análise"></image-slot>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block reveal" id="quando-precisa" data-screen-label="quando-precisa">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Quando sua empresa pode precisar</span>
+      <h2>Situações em que a assistência técnica pode ser necessária</h2>
+      <p>A necessidade de assistência técnica depende das características específicas de cada caso. Estes são cenários em que ela costuma ser relevante:</p>
+    </div>
+    <div class="case-grid">
+      <div class="case"><span class="num">01</span><h3>Perícias relacionadas à insalubridade</h3></div>
+      <div class="case"><span class="num">02</span><h3>Perícias relacionadas à periculosidade</h3></div>
+      <div class="case"><span class="num">03</span><h3>Demandas envolvendo condições de trabalho</h3></div>
+      <div class="case"><span class="num">04</span><h3>Questões relacionadas à exposição ocupacional</h3></div>
+      <div class="case"><span class="num">05</span><h3>Avaliações de ambientes de trabalho</h3></div>
+      <div class="case"><span class="num">06</span><h3>Análises relacionadas à ergonomia</h3></div>
+      <div class="case"><span class="num">07</span><h3>Discussões técnicas envolvendo documentos de SST</h3></div>
+      <div class="case"><span class="num">08</span><h3>Análise de laudos e conclusões periciais</h3></div>
+      <div class="case"><span class="num">09</span><h3>Acompanhamento técnico durante diligências</h3></div>
+    </div>
+    <div class="pull">Cada demanda tem particularidades. <em>Avaliamos o seu caso antes de indicar a abordagem técnica adequada.</em></div>
+  </div>
+</section>
+
+<section class="block reveal" data-screen-label="realidade-empresa">
+  <div class="wrap">
+    <div class="tailor-grid">
+      <div class="tailor-panel"><image-slot id="per-tailor-shot" class="tailor-shot" shape="rounded" radius="14" placeholder="Foto: visita técnica ao ambiente de trabalho do cliente"></image-slot></div>
+      <div>
+        <span class="eyebrow">Foco na realidade da empresa</span>
+        <h2 style="font-size:34px;letter-spacing:-0.02em;line-height:1.15;margin-top:14px">Cada empresa possui uma realidade. Nossa assistência técnica também.</h2>
+        <p style="color:var(--ink-dim);font-size:17px;line-height:1.65;margin-top:16px">Avaliamos as particularidades da empresa, do ambiente de trabalho, das atividades desenvolvidas e da demanda apresentada para definir a abordagem técnica mais adequada.</p>
+        <div class="tailor-list">
+          <div class="tl-item"><span class="dot"></span><div><h3>Contexto da operação</h3><p>Atividades, processos e estrutura da empresa envolvida na demanda.</p></div></div>
+          <div class="tl-item"><span class="dot"></span><div><h3>Ambiente de trabalho</h3><p>Condições, agentes e características dos locais relacionados ao caso.</p></div></div>
+          <div class="tl-item"><span class="dot"></span><div><h3>Documentação existente</h3><p>Registros, programas e documentos de SST relevantes para a análise.</p></div></div>
+          <div class="tl-item"><span class="dot"></span><div><h3>Abordagem definida caso a caso</h3><p>A estratégia técnica é construída a partir do cenário apresentado.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner reveal" data-screen-label="cta">
+  <div class="wrap">
+    <div class="cta-box">
+      <h2>Conte com especialistas para defender tecnicamente os interesses da sua empresa.</h2>
+      <p>Uma perícia pode envolver questões técnicas complexas. Conte com a estrutura multidisciplinar da Azuris para analisar o seu caso, acompanhar a demanda e oferecer o suporte técnico adequado.</p>
+      <div class="cta-actions">
+        <a href="https://wa.me/5513996559306" target="_blank" class="btn btn-primary">Solicitar assistência técnica</a>
+        <a href="https://wa.me/5513996559306" target="_blank" class="btn btn-outline">Falar com a Azuris</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="logo"><image-slot src="assets/slots/logo-footer.webp" id="logo-foot-per" class="logo-mark" shape="rounded" radius="8" placeholder="Logo"></image-slot>Azuris Soluções em SST</div>
+        <p>Soluções completas em Saúde e Segurança do Trabalho, gestão e tecnologia para pequenas e médias empresas.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Assistência pericial</h4>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#quando-precisa">Quando é necessária</a>
+        <a href="servico-juridico.html">Suporte jurídico em SST</a>
+      </div>
+      <div class="foot-col">
+        <h4>Azuris</h4>
+        <a href="index.html">Página inicial</a>
+        <a href="index.html#recursos">Todas as soluções</a>
+        <a href="https://wa.me/5513996559306" target="_blank">Falar no WhatsApp</a>
+      </div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 Azuris Soluções em SST. Todos os direitos reservados.</span><span>13 99655-9306</span></div>
+  </div>
+</footer>
+
+<script>
+(function(){document.querySelectorAll('.video-slot').forEach(slot=>{const vid=slot.querySelector('video'),pic=slot.querySelector('img.media-img'),input=slot.querySelector('input[type=file]'),drop=slot.querySelector('.video-drop'),clear=slot.querySelector('.video-clear'),KEY=slot.id+'-video-src',KIND=slot.id+'-media-kind';
+function set(src,kind){if(kind==='image'){pic.src=src;slot.classList.add('has-image');slot.classList.remove('has-video')}else{vid.src=src;slot.classList.add('has-video');slot.classList.remove('has-image');vid.play().catch(()=>{})}}
+function load(f){if(!f)return;const kind=f.type.startsWith('image/')?'image':f.type.startsWith('video/')?'video':null;if(!kind)return;set(URL.createObjectURL(f),kind);if(f.size<4.5e6){const r=new FileReader();r.onload=()=>{try{localStorage.setItem(KEY,r.result);localStorage.setItem(KIND,kind)}catch(e){}};r.readAsDataURL(f)}}
+input.addEventListener('change',e=>load(e.target.files[0]));
+['dragenter','dragover'].forEach(t=>drop.addEventListener(t,e=>{e.preventDefault();drop.classList.add('drag')}));
+['dragleave','drop'].forEach(t=>drop.addEventListener(t,e=>{e.preventDefault();drop.classList.remove('drag')}));
+drop.addEventListener('drop',e=>load(e.dataTransfer.files[0]));
+clear.addEventListener('click',()=>{vid.removeAttribute('src');vid.load();pic.removeAttribute('src');slot.classList.remove('has-video','has-image');try{localStorage.removeItem(KEY);localStorage.removeItem(KIND)}catch(e){}});
+try{const s=localStorage.getItem(KEY);if(s)set(s,localStorage.getItem(KIND)||'video')}catch(e){}})})();
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

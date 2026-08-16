@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consultoria e Assessoria em Segurança do Trabalho (SST) | Azuris SST</title>
+<meta name="description" content="Consultoria e assessoria em SST personalizadas: acompanhamento contínuo, orientação técnica, soluções sob medida e plataforma de controle de vencimentos para contratos mensais.">
+<script src="image-slot.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:oklch(0.16 0.02 255);--bg-2:oklch(0.20 0.024 255);--card:oklch(0.22 0.028 255);--line:oklch(1 0 0 / 0.09);--ink:oklch(0.97 0.008 250);--ink-dim:oklch(0.78 0.018 250);--ink-faint:oklch(0.58 0.02 250);--accent:oklch(0.7 0.15 245);--accent-2:oklch(0.76 0.13 215);--accent-ink:oklch(0.15 0.03 250)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Manrope',sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;text-wrap:pretty}
+h1,h2,h3,h4,.display{font-family:'Sora',sans-serif}
+a{color:var(--accent);text-decoration:none}
+a:hover{color:oklch(0.8 0.14 245)}
+img{display:block;max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 40px}
+.btn{display:inline-flex;align-items:center;gap:8px;white-space:nowrap;padding:14px 26px;border-radius:8px;font-weight:600;font-size:15px;border:1px solid transparent;cursor:pointer;transition:transform .15s ease,opacity .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--accent);color:var(--accent-ink)}
+.btn-primary:hover{color:var(--accent-ink);opacity:.92}
+.btn-outline{border-color:var(--line);color:var(--ink)}
+.btn-outline:hover{color:var(--ink);border-color:oklch(1 0 0 / 0.25)}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+header{position:sticky;top:0;z-index:50;background:var(--bg-2);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Sora',sans-serif;font-weight:700;font-size:19px;color:var(--ink)}
+.logo:hover{color:var(--ink)}
+.logo-mark{width:34px;height:34px;flex-shrink:0;background:transparent}
+.logo-mark::part(frame){background:transparent;border:none;border-radius:0;box-shadow:none}
+.logo-mark::part(image){border-radius:0;object-fit:contain}
+.logo-mark::part(ring){display:none}
+.icon:not([data-filled]){width:124px!important;height:124px!important}
+.logo-mark:not([data-filled])::part(empty){display:none!important}
+.logo-mark:not([data-filled]){display:none!important}
+.foot-grid{align-items:start}
+.foot-brand .logo{min-height:0}
+.nav-actions{display:flex;align-items:center;gap:14px}
+.nav-actions .back{font-size:14px;color:var(--ink-dim)}
+.nav-actions .back:hover{color:var(--ink)}
+.nav-actions .btn{padding:10px 20px;font-size:14px}
+
+.hero{position:relative;padding:88px 0 76px;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-220px;right:-180px;width:660px;height:660px;background:radial-gradient(circle,oklch(0.42 0.14 245 / 0.4),transparent 70%);filter:blur(10px);pointer-events:none}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,0.95fr);gap:56px;align-items:center}
+.hero h1{font-size:50px;line-height:1.08;font-weight:700;letter-spacing:-0.02em;margin:18px 0 22px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p.sub{font-size:18px;color:var(--ink-dim);max-width:560px;margin-bottom:32px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:30px}
+.trust-chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{display:inline-flex;align-items:center;gap:9px;font-size:13px;font-weight:600;color:var(--ink-dim);border:1px solid var(--line);background:oklch(1 0 0 / 0.03);border-radius:100px;padding:9px 16px}
+.chip::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0}
+.hero-visual{position:relative;min-width:0;display:flex;flex-direction:column;gap:18px}
+.hero-shot{width:100%;height:340px;border-radius:20px;border:1px solid var(--line);background:var(--card);box-shadow:0 40px 70px -30px oklch(0 0 0 / 0.65)}
+.hero-shot::part(frame){border-radius:20px;background:linear-gradient(150deg,oklch(0.24 0.04 250),oklch(0.19 0.026 255))}
+.float-card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;box-shadow:0 20px 40px -18px oklch(0 0 0 / 0.55);max-width:330px;align-self:flex-end}
+.float-value{font-family:'Sora',sans-serif;font-size:15px;font-weight:700;color:var(--accent);margin-bottom:6px}
+.float-delta{font-size:13px;color:var(--ink-dim);line-height:1.45}
+
+section.block{padding:0 0 104px}
+.section-head{max-width:760px;margin-bottom:48px}
+.section-head h2{font-size:36px;letter-spacing:-0.015em;margin-top:14px;line-height:1.15}
+.section-head h2 em{font-style:normal;color:var(--accent)}
+.section-head p{color:var(--ink-dim);font-size:17px;margin-top:16px;line-height:1.6}
+.section-head p strong{color:var(--ink);font-weight:700}
+
+.reality{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:88px 0;margin-bottom:104px}
+.reality-grid{display:grid;grid-template-columns:1.05fr 0.95fr;gap:56px;align-items:center}
+.reality h2{font-size:38px;line-height:1.12;letter-spacing:-0.02em;margin-top:16px}
+.reality h2 em{font-style:normal;color:var(--accent)}
+.reality p{color:var(--ink-dim);font-size:17px;line-height:1.65;margin-top:20px}
+.reality p strong{color:var(--ink)}
+
+.mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.mini{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;transition:border-color .2s ease,transform .2s ease}
+.mini:hover{border-color:oklch(0.7 0.15 245 / 0.45);transform:translateY(-3px)}
+.mini .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);margin-top:7px;flex-shrink:0;box-shadow:0 0 0 5px oklch(0.7 0.15 245 / 0.14)}
+.mini h3{font-size:15.5px;font-weight:600;font-family:'Manrope',sans-serif;line-height:1.45;color:var(--ink)}
+.disclaimer{margin-top:26px;border:1px solid var(--line);background:oklch(1 0 0 / 0.03);border-radius:14px;padding:22px 24px;font-size:14.5px;color:var(--ink-dim);line-height:1.6}
+.disclaimer strong{color:var(--ink)}
+
+.flow-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.flow-step{position:relative;background:linear-gradient(150deg,oklch(0.23 0.03 255 / 0.92),oklch(0.18 0.024 255 / 0.94));border:1px solid var(--line);border-radius:16px;padding:26px 22px;transition:border-color .25s ease,transform .25s ease}
+.flow-step:hover{border-color:oklch(0.7 0.15 245 / 0.5);transform:translateY(-3px)}
+.flow-num{font-family:'Sora',sans-serif;font-size:32px;font-weight:700;color:oklch(0.7 0.15 245 / 0.45);line-height:1;margin-bottom:14px}
+.flow-step h3{font-size:16.5px;margin-bottom:9px}
+.flow-step p{font-size:14px;color:var(--ink-dim);line-height:1.55}
+.pull{margin-top:26px;font-family:'Sora',sans-serif;font-weight:600;font-size:19px;line-height:1.4;color:var(--ink);padding:24px 26px;border-radius:16px;border:1px solid oklch(0.7 0.15 245 / 0.35);background:oklch(0.7 0.15 245 / 0.1)}
+.pull em{font-style:normal;color:var(--accent)}
+
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.why-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:30px 28px;transition:border-color .2s ease,transform .2s ease}
+.why-card:hover{border-color:oklch(1 0 0 / 0.2);transform:translateY(-3px)}
+.why-card .icon{width:48px;height:48px;border-radius:12px;background:transparent;margin-bottom:18px}
+.why-card .icon::part(frame){background:transparent;border:none;box-shadow:none}
+.why-card h3{font-size:18px;margin-bottom:10px}
+.why-card p{font-size:14.5px;color:var(--ink-dim);line-height:1.55}
+
+/* Oferta / plataforma */
+.offer-box{position:relative;overflow:hidden;background:linear-gradient(135deg,oklch(0.34 0.1 250),oklch(0.24 0.08 225));border-radius:24px;padding:60px}
+.offer-box::before{content:"";position:absolute;top:-160px;right:-120px;width:520px;height:520px;background:radial-gradient(circle,oklch(0.75 0.13 220 / 0.28),transparent 70%);pointer-events:none}
+.offer-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr 0.9fr;gap:48px;align-items:center}
+.offer-box h2{font-size:34px;line-height:1.15;letter-spacing:-0.02em;margin:16px 0 18px}
+.offer-box p{color:oklch(0.94 0.025 245);font-size:16.5px;line-height:1.65}
+.offer-box p+p{margin-top:14px}
+.seal{background:oklch(0.16 0.02 255 / 0.55);border:1px solid oklch(1 0 0 / 0.2);border-radius:20px;padding:32px;backdrop-filter:blur(6px);text-align:center}
+.seal-kicker{font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:oklch(0.86 0.09 220);margin-bottom:14px}
+.seal-title{font-family:'Sora',sans-serif;font-size:26px;font-weight:700;line-height:1.2;letter-spacing:-0.01em}
+.seal-sub{font-size:14px;color:oklch(0.88 0.03 240);margin-top:12px;line-height:1.55}
+.seal .btn{margin-top:22px}
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.feature{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;display:flex;gap:13px;align-items:flex-start}
+.feature .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);margin-top:7px;flex-shrink:0;box-shadow:0 0 0 5px oklch(0.7 0.15 245 / 0.14)}
+.feature p{font-size:15px;color:var(--ink-dim);line-height:1.5}
+
+/* RA */
+.ra-grid{display:grid;grid-template-columns:0.95fr 1.05fr;gap:56px;align-items:center}
+.ra-panel{border:1px solid var(--line);border-radius:20px;background:var(--card);padding:14px;box-shadow:0 40px 70px -34px oklch(0 0 0 / 0.7)}
+.ra-shot{width:100%;height:320px;border-radius:14px;background:transparent}
+.ra-shot::part(frame){border-radius:14px;background:linear-gradient(150deg,oklch(0.25 0.045 250),oklch(0.19 0.026 255))}
+.ra-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.note{margin-top:22px;font-size:13.5px;color:var(--ink-faint);border-left:2px solid oklch(0.7 0.15 245 / 0.5);padding-left:14px;line-height:1.55}
+
+/* Timeline */
+.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.tl{position:relative;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px 26px;transition:border-color .2s ease,transform .2s ease}
+.tl:hover{border-color:oklch(0.7 0.15 245 / 0.45);transform:translateY(-3px)}
+.tl-num{font-family:'Sora',sans-serif;font-size:13px;font-weight:700;letter-spacing:.08em;color:var(--accent);margin-bottom:14px}
+.tl h3{font-size:18px;margin-bottom:8px}
+.tl p{font-size:14.5px;color:var(--ink-dim);line-height:1.55}
+
+.cta-banner{padding:0 0 110px}
+.cta-box{background:linear-gradient(135deg,oklch(0.34 0.1 250),oklch(0.26 0.09 225));border-radius:24px;padding:70px;text-align:center}
+.cta-box h2{font-size:36px;margin-bottom:14px;letter-spacing:-0.015em;line-height:1.15}
+.cta-box p{color:oklch(0.93 0.03 245);max-width:660px;margin:0 auto 32px;font-size:16.5px;line-height:1.6}
+.cta-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.cta-box .btn-outline{border-color:oklch(1 0 0 / 0.35);color:var(--ink)}
+
+footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg-2)}
+.foot-grid{display:grid;grid-template-columns:1.4fr repeat(2,1fr);gap:40px;margin-bottom:44px}
+.foot-brand p{color:var(--ink-faint);font-size:14px;margin-top:14px;max-width:300px;line-height:1.6}
+.foot-col h4{font-size:13px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.06em;margin-bottom:16px;font-family:'Sora',sans-serif}
+.foot-col a{display:block;color:var(--ink-dim);font-size:14.5px;margin-bottom:10px}
+.foot-col a:hover{color:var(--ink)}
+.foot-bottom{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding-top:28px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-faint)}
+
+@keyframes revealIn{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:translateY(0)}}
+.reveal.in{animation:revealIn .7s cubic-bezier(.16,.8,.3,1) both}
+.hero h1,.hero .eyebrow,.hero p.sub,.hero-ctas,.trust-chips{opacity:0;transform:translateY(16px);animation:revealIn .7s ease forwards}
+.hero .eyebrow{animation-delay:.05s}.hero h1{animation-delay:.15s}.hero p.sub{animation-delay:.28s}.hero-ctas{animation-delay:.4s}.trust-chips{animation-delay:.5s}
+@media(prefers-reduced-motion:reduce){.reveal,.hero h1,.hero .eyebrow,.hero p.sub,.hero-ctas,.trust-chips{opacity:1!important;transform:none!important;animation:none!important}}
+
+@media(max-width:1000px){.why-grid,.mini-grid,.feature-grid,.timeline{grid-template-columns:1fr 1fr}.flow-grid{grid-template-columns:1fr 1fr}.offer-grid,.reality-grid,.ra-grid{grid-template-columns:1fr;gap:36px}.offer-box{padding:44px 32px}}
+@media(max-width:760px){
+  .wrap{padding:0 22px}
+  .hero{padding:56px 0 56px}
+  .hero-grid{grid-template-columns:1fr;gap:36px}
+  .hero h1{font-size:33px}
+  .hero p.sub{font-size:16.5px}
+  .hero-shot{height:230px}
+  .float-card{max-width:none;align-self:stretch}
+  .section-head h2,.reality h2{font-size:27px}
+  .why-grid,.mini-grid,.feature-grid,.timeline,.flow-grid,.foot-grid{grid-template-columns:1fr}
+  .why-card,.flow-step,.tl{padding:26px 22px}
+  .cta-box{padding:44px 24px}
+  .cta-box h2,.offer-box h2{font-size:26px}
+  .nav-actions .back{display:none}
+  section.block{padding:0 0 72px}
+  .reality{padding:64px 0;margin-bottom:72px}
+}
+image-slot{min-width:0 !important;max-width:100% !important}
+html,body{overflow-x:hidden}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="index.html" class="logo"><image-slot src="assets/slots/logo-nav.webp" id="logo-nav-cons" class="logo-mark" shape="rounded" radius="8" placeholder="Logo"></image-slot>Azuris Soluções em SST</a>
+      <div class="nav-actions">
+        <a href="index.html#recursos" class="back">← Voltar</a>
+        <a href="https://wa.me/5513996559306" target="_blank" class="btn btn-primary">Falar com um especialista</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" data-screen-label="hero-consultoria">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Consultoria e Assessoria em SST</span>
+      <h1>Consultoria e Assessoria em SST para uma gestão <em>mais segura e eficiente.</em></h1>
+      <p class="sub">Conte com profissionais especializados para transformar as necessidades da sua empresa em soluções práticas de Saúde e Segurança do Trabalho.</p>
+      <div class="hero-ctas">
+        <a href="https://wa.me/5513996559306" target="_blank" class="btn btn-primary">Fale com um especialista</a>
+        <a href="#consultoria" class="btn btn-outline">Entender como funciona</a>
+      </div>
+      <div class="trust-chips">
+        <span class="chip">Acompanhamento próximo</span>
+        <span class="chip">Soluções personalizadas</span>
+        <span class="chip">Tecnologia aplicada à SST</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <image-slot src="assets/slots/cons-hero-shot.webp" id="cons-hero-shot" class="hero-shot" shape="rounded" radius="20" placeholder="Foto de profissional de SST em visita técnica / reunião com cliente"></image-slot>
+      <div class="float-card">
+        <div class="float-value">Cada empresa tem uma realidade diferente</div>
+        <div class="float-delta">Nossas soluções são desenvolvidas de acordo com as necessidades específicas de cada cliente.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reality reveal" data-screen-label="assessoria">
+  <div class="wrap">
+    <div class="reality-grid">
+      <div>
+        <span class="eyebrow">O que é assessoria em SST</span>
+        <h2>Um acompanhamento <em>contínuo</em> das demandas de SST da sua empresa.</h2>
+        <p>A assessoria em SST é o acompanhamento contínuo da empresa em suas demandas de Saúde e Segurança do Trabalho — auxiliando na organização, no acompanhamento e na gestão dessas rotinas.</p>
+        <p><strong>O objetivo é manter processos, documentos e ações de segurança mais organizados e alinhados às necessidades do negócio</strong>, reduzindo a sobrecarga da empresa na gestão dessas demandas.</p>
+      </div>
+      <image-slot src="assets/slots/cons-assessoria-shot.webp" id="cons-assessoria-shot" class="hero-shot" style="height:300px" shape="rounded" radius="20" placeholder="Foto de acompanhamento técnico / equipe analisando documentos de SST"></image-slot>
+    </div>
+    <div class="mini-grid" style="margin-top:56px">
+      <div class="mini"><span class="dot"></span><h3>Acompanhamento das demandas de SST</h3></div>
+      <div class="mini"><span class="dot"></span><h3>Organização e controle de documentos</h3></div>
+      <div class="mini"><span class="dot"></span><h3>Orientações técnicas</h3></div>
+      <div class="mini"><span class="dot"></span><h3>Apoio na implementação de medidas de segurança</h3></div>
+      <div class="mini"><span class="dot"></span><h3>Acompanhamento de necessidades específicas da empresa</h3></div>
+      <div class="mini"><span class="dot"></span><h3>Suporte na gestão das rotinas de SST</h3></div>
+    </div>
+  </div>
+</section>
+
+<section class="block reveal" id="consultoria" data-screen-label="consultoria">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">O que é consultoria em SST</span>
+      <h2>Uma análise específica para propor a <em>solução adequada</em></h2>
+      <p>Enquanto a assessoria acompanha a rotina, a consultoria analisa uma necessidade, problema ou cenário específico da empresa e propõe soluções técnicas adequadas à sua realidade.</p>
+    </div>
+    <div class="flow-grid">
+      <div class="flow-step"><div class="flow-num">01</div><h3>Entendemos sua empresa</h3><p>Conhecemos a atividade, a estrutura e o contexto do negócio.</p></div>
+      <div class="flow-step"><div class="flow-num">02</div><h3>Identificamos necessidades e riscos</h3><p>Levantamos os pontos que precisam de atenção.</p></div>
+      <div class="flow-step"><div class="flow-num">03</div><h3>Desenvolvemos estratégias</h3><p>Estruturamos caminhos técnicos possíveis para o cenário.</p></div>
+      <div class="flow-step"><div class="flow-num">04</div><h3>Apresentamos soluções</h3><p>Entregamos uma proposta clara e aplicável à realidade da empresa.</p></div>
+      <div class="flow-step"><div class="flow-num">05</div><h3>Acompanhamos a implementação</h3><p>Quando necessário, seguimos junto durante a execução.</p></div>
+    </div>
+    <div class="pull">Não oferecemos soluções genéricas. <em>Entendemos a realidade da sua empresa para desenvolver uma solução adequada às suas necessidades.</em></div>
+  </div>
+</section>
+
+<section class="block reveal" data-screen-label="personalizacao">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Consultoria personalizada</span>
+      <h2>Sua empresa tem uma realidade. Nossa consultoria acompanha essa realidade.</h2>
+      <p>Cada empresa possui diferentes atividades, estruturas, riscos, processos, número de colaboradores e necessidades. Por isso, nossa consultoria é construída a partir do seu cenário.</p>
+    </div>
+    <div class="mini-grid">
+      <div class="mini"><span class="dot"></span><h3>Diagnóstico da realidade da empresa</h3></div>
+      <div class="mini"><span class="dot"></span><h3>Identificação das necessidades</h3></div>
+      <div class="mini"><span class="dot"></span><h3>Soluções personalizadas</h3></div>
+      <div class="mini"><span class="dot"></span><h3>Orientação técnica especializada</h3></div>
+      <div class="mini"><span class="dot"></span><h3>Atendimento próximo ao cliente</h3></div>
+      <div class="mini"><span class="dot"></span><h3>Foco em soluções práticas</h3></div>
+    </div>
+    <div class="pull">Nosso objetivo é encontrar <em>a melhor solução para a sua empresa</em>, e não simplesmente oferecer um serviço pronto.</div>
+  </div>
+</section>
+
+<section class="block reveal" data-screen-label="diferenciais">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Por que contar com nossa consultoria</span>
+      <h2>Especialização técnica com atendimento próximo</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card"><image-slot src="assets/slots/cons-w1.webp" id="cons-w1" class="icon" shape="rounded" radius="12" placeholder="Ícone"></image-slot><h3>Especialização</h3><p>Profissionais preparados para atuar nas diferentes demandas de SST.</p></div>
+      <div class="why-card"><image-slot src="assets/slots/cons-w2.webp" id="cons-w2" class="icon" shape="rounded" radius="12" placeholder="Ícone"></image-slot><h3>Soluções personalizadas</h3><p>Cada projeto é desenvolvido considerando a realidade e as necessidades do cliente.</p></div>
+      <div class="why-card"><image-slot src="assets/slots/cons-w3.webp" id="cons-w3" class="icon" shape="rounded" radius="12" placeholder="Ícone"></image-slot><h3>Praticidade</h3><p>Conte com apoio especializado sem precisar estruturar internamente todas as soluções.</p></div>
+      <div class="why-card"><image-slot src="assets/slots/cons-w4.webp" id="cons-w4" class="icon" shape="rounded" radius="12" placeholder="Ícone"></image-slot><h3>Tecnologia</h3><p>Utilizamos ferramentas e recursos tecnológicos para tornar a gestão de SST mais eficiente.</p></div>
+      <div class="why-card"><image-slot src="assets/slots/cons-w5.webp" id="cons-w5" class="icon" shape="rounded" radius="12" placeholder="Ícone"></image-slot><h3>Atendimento próximo</h3><p>Entendemos as necessidades do cliente e buscamos construir soluções em conjunto.</p></div>
+      <div class="why-card"><image-slot src="assets/slots/cons-w6.webp" id="cons-w6" class="icon" shape="rounded" radius="12" placeholder="Ícone"></image-slot><h3>Visão estratégica</h3><p>Mais do que atender uma demanda pontual, buscamos contribuir para uma gestão de SST mais eficiente.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block reveal" data-screen-label="beneficios-clientes">
+  <div class="wrap">
+    <div class="offer-box">
+      <div class="offer-grid">
+        <div>
+          <span class="eyebrow" style="color:oklch(0.88 0.09 220)">Benefícios exclusivos</span>
+          <h2>Contratou nossa consultoria? Sua empresa também ganha vantagens exclusivas.</h2>
+          <p>Clientes que fecham a consultoria conosco podem ter acesso a <strong style="color:#fff">condições comerciais especiais nas demais soluções da Azuris</strong> — plataformas, treinamentos, documentação e tecnologia.</p>
+        </div>
+        <div class="seal">
+          <div class="seal-kicker">Benefício exclusivo</div>
+          <div class="seal-title">SUPER DESCONTOS EM NOSSAS SOLUÇÕES</div>
+          <div class="seal-sub">Clientes de consultoria contam com condições especiais e super descontos na contratação de outras soluções da nossa empresa.</div>
+          <a href="index.html#recursos" class="btn btn-primary">Quero conhecer nossas soluções</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block reveal" id="recorrente" data-screen-label="recorrente">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Consultoria recorrente</span>
+      <h2>Consultoria recorrente: <em>mais acompanhamento + mais tecnologia</em></h2>
+      <p><strong>Contratando nossa consultoria com recorrência mensal, sua empresa ganha gratuitamente acesso à nossa plataforma de controle de vencimentos de documentos e treinamentos.</strong></p>
+    </div>
+    <div class="offer-box">
+      <div class="offer-grid">
+        <div>
+          <image-slot src="assets/slots/cons-plataforma-shot.webp" id="cons-plataforma-shot" style="width:100%;height:260px;border-radius:16px" shape="rounded" radius="16" placeholder="Print da plataforma de controle de vencimentos"></image-slot>
+        </div>
+        <div class="seal">
+          <div class="seal-kicker">Benefício exclusivo</div>
+          <div class="seal-title">CONSULTORIA MENSAL + PLATAFORMA GRÁTIS</div>
+          <div class="seal-sub">Acesso liberado enquanto o contrato mensal de consultoria estiver ativo.</div>
+          <a href="https://wa.me/5513996559306" target="_blank" class="btn btn-primary">Quero contratar a consultoria mensal</a>
+        </div>
+      </div>
+    </div>
+    <div class="feature-grid">
+      <div class="feature"><span class="dot"></span><p>Controle de vencimentos de documentos</p></div>
+      <div class="feature"><span class="dot"></span><p>Controle de vencimentos de treinamentos</p></div>
+      <div class="feature"><span class="dot"></span><p>Organização das informações</p></div>
+      <div class="feature"><span class="dot"></span><p>Acompanhamento das datas importantes</p></div>
+      <div class="feature"><span class="dot"></span><p>Mais praticidade para a gestão de SST</p></div>
+      <div class="feature"><span class="dot"></span><p>Redução do risco de perder prazos importantes</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block reveal" data-screen-label="realidade-aumentada">
+  <div class="wrap">
+    <div class="ra-grid">
+      <div class="ra-panel"><image-slot src="assets/slots/cons-ra-shot.webp" id="cons-ra-shot" class="ra-shot" shape="rounded" radius="14" placeholder="Foto de profissional usando óculos de realidade aumentada em treinamento"></image-slot></div>
+      <div>
+        <span class="eyebrow">Tecnologia</span>
+        <h2 style="font-size:34px;letter-spacing:-0.02em;line-height:1.15;margin-top:14px">Tecnologia que transforma a experiência de aprender</h2>
+        <p style="color:var(--ink-dim);font-size:17px;line-height:1.65;margin-top:16px">Em alguns casos e conforme disponibilidade, os treinamentos podem contar com recursos de realidade aumentada, proporcionando uma experiência mais imersiva e próxima de situações práticas.</p>
+        <div class="ra-list">
+          <span class="chip">Experiência mais imersiva</span>
+          <span class="chip">Aprendizado prático</span>
+          <span class="chip">Simulação de situações</span>
+          <span class="chip">Maior interação dos participantes</span>
+          <span class="chip">Tecnologia aplicada à Segurança do Trabalho</span>
+        </div>
+        <div class="note">Recurso disponível para treinamentos e projetos específicos. Consulte a disponibilidade.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block reveal" data-screen-label="atendimento">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Como funciona nosso atendimento</span>
+      <h2>Do primeiro contato ao acompanhamento contínuo</h2>
+    </div>
+    <div class="timeline">
+      <div class="tl"><div class="tl-num">01</div><h3>Converse conosco</h3><p>Entendemos inicialmente o que sua empresa precisa.</p></div>
+      <div class="tl"><div class="tl-num">02</div><h3>Conhecemos sua realidade</h3><p>Analisamos o contexto, a atividade e as necessidades da empresa.</p></div>
+      <div class="tl"><div class="tl-num">03</div><h3>Identificamos as necessidades</h3><p>Levantamos os principais pontos que precisam de atenção.</p></div>
+      <div class="tl"><div class="tl-num">04</div><h3>Desenvolvemos a solução</h3><p>Estruturamos uma proposta personalizada.</p></div>
+      <div class="tl"><div class="tl-num">05</div><h3>Colocamos em prática</h3><p>Apoiamos a empresa na execução das soluções contratadas.</p></div>
+      <div class="tl"><div class="tl-num">06</div><h3>Acompanhamos</h3><p>Nos casos de consultoria recorrente, mantemos um acompanhamento contínuo.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner reveal" data-screen-label="cta">
+  <div class="wrap">
+    <div class="cta-box">
+      <h2>Pronto para levar a gestão de SST da sua empresa para outro nível?</h2>
+      <p>Fale com nossa equipe e descubra como uma consultoria personalizada pode ajudar sua empresa a enfrentar suas demandas de Saúde e Segurança do Trabalho com mais organização, tecnologia e eficiência.</p>
+      <div class="cta-actions">
+        <a href="https://wa.me/5513996559306" target="_blank" class="btn btn-primary">Falar com um especialista</a>
+        <a href="index.html#recursos" class="btn btn-outline">Conhecer nossas soluções</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="logo"><image-slot src="assets/slots/logo-footer.webp" id="logo-foot-cons" class="logo-mark" shape="rounded" radius="8" placeholder="Logo"></image-slot>Azuris Soluções em SST</div>
+        <p>Soluções completas em Saúde e Segurança do Trabalho, gestão e tecnologia para pequenas e médias empresas.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Consultoria</h4>
+        <a href="#consultoria">Consultoria em SST</a>
+        <a href="#recorrente">Consultoria recorrente</a>
+        <a href="index.html#recursos">Outras soluções</a>
+      </div>
+      <div class="foot-col">
+        <h4>Azuris</h4>
+        <a href="index.html">Página inicial</a>
+        <a href="index.html#recursos">Todas as soluções</a>
+        <a href="https://wa.me/5513996559306" target="_blank">Falar no WhatsApp</a>
+      </div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 Azuris Soluções em SST. Todos os direitos reservados.</span><span>13 99655-9306</span></div>
+  </div>
+</footer>
+
+<script>
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

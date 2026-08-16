@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assessoria e Consultoria Jurídica Trabalhista — Azuris Soluções em SST</title>
+<meta name="description" content="Assessoria e consultoria jurídica trabalhista preventiva para empresas: análise de documentos e procedimentos, identificação de riscos e integração com a gestão de Saúde e Segurança do Trabalho.">
+<script src="image-slot.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:oklch(0.16 0.02 255);--bg-2:oklch(0.20 0.024 255);--card:oklch(0.22 0.028 255);--line:oklch(1 0 0 / 0.09);--ink:oklch(0.97 0.008 250);--ink-dim:oklch(0.78 0.018 250);--ink-faint:oklch(0.58 0.02 250);--accent:oklch(0.7 0.15 245);--accent-2:oklch(0.76 0.13 215);--accent-ink:oklch(0.15 0.03 250)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Manrope',sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;text-wrap:pretty}
+h1,h2,h3,h4,.display{font-family:'Sora',sans-serif}
+a{color:var(--accent);text-decoration:none}
+a:hover{color:oklch(0.8 0.14 245)}
+img{display:block;max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 40px}
+.btn{display:inline-flex;align-items:center;gap:8px;white-space:nowrap;padding:14px 26px;border-radius:8px;font-weight:600;font-size:15px;border:1px solid transparent;cursor:pointer;transition:transform .15s ease,opacity .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--accent);color:var(--accent-ink)}
+.btn-primary:hover{color:var(--accent-ink);opacity:.92}
+.btn-outline{border-color:var(--line);color:var(--ink)}
+.btn-outline:hover{color:var(--ink);border-color:oklch(1 0 0 / 0.25)}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+header{position:sticky;top:0;z-index:50;background:var(--bg-2);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Sora',sans-serif;font-weight:700;font-size:19px;color:var(--ink)}
+.logo:hover{color:var(--ink)}
+.logo-mark{width:34px;height:34px;flex-shrink:0;background:transparent}
+.logo-mark::part(frame){background:transparent;border:none;border-radius:0;box-shadow:none}
+.logo-mark::part(image){border-radius:0;object-fit:contain}
+.logo-mark::part(ring){display:none}
+.icon:not([data-filled]){width:124px!important;height:124px!important}
+.logo-mark:not([data-filled])::part(empty){display:none!important}
+.logo-mark:not([data-filled]){display:none!important}
+.foot-grid{align-items:start}
+.foot-brand .logo{min-height:0}
+.nav-actions{display:flex;align-items:center;gap:14px}
+.nav-actions .back{font-size:14px;color:var(--ink-dim)}
+.nav-actions .back:hover{color:var(--ink)}
+.nav-actions .btn{padding:10px 20px;font-size:14px}
+
+/* HERO */
+.hero{position:relative;padding:88px 0 76px;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-220px;right:-180px;width:660px;height:660px;background:radial-gradient(circle,oklch(0.42 0.14 245 / 0.4),transparent 70%);filter:blur(10px);pointer-events:none}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,0.95fr);gap:56px;align-items:center}
+.hero h1{font-size:50px;line-height:1.08;font-weight:700;letter-spacing:-0.02em;margin:18px 0 22px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p.sub{font-size:18px;color:var(--ink-dim);max-width:540px;margin-bottom:32px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:30px}
+.trust-chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{display:inline-flex;align-items:center;gap:9px;font-size:13px;font-weight:600;color:var(--ink-dim);border:1px solid var(--line);background:oklch(1 0 0 / 0.03);border-radius:100px;padding:9px 16px}
+.chip::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0}
+.hero-visual{position:relative;min-width:0;display:flex;flex-direction:column;gap:18px}
+.hero-shot{width:100%;height:320px;border-radius:20px;border:1px solid var(--line);background:var(--card);box-shadow:0 40px 70px -30px oklch(0 0 0 / 0.65)}
+.hero-shot::part(frame){border-radius:20px;background:linear-gradient(150deg,oklch(0.24 0.04 250),oklch(0.19 0.026 255))}
+.float-card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;box-shadow:0 20px 40px -18px oklch(0 0 0 / 0.55);max-width:340px;align-self:flex-end}
+.float-value{font-family:'Sora',sans-serif;font-size:15px;font-weight:700;color:var(--accent);margin-bottom:6px}
+.float-delta{font-size:13px;color:var(--ink-dim);line-height:1.45}
+
+/* BASE */
+section.block{padding:0 0 104px}
+.section-head{max-width:760px;margin-bottom:48px}
+.section-head h2{font-size:36px;letter-spacing:-0.015em;margin-top:14px;line-height:1.15}
+.section-head h2 em{font-style:normal;color:var(--accent)}
+.section-head p{color:var(--ink-dim);font-size:17px;margin-top:16px;line-height:1.65}
+.section-head p strong{color:var(--ink);font-weight:700}
+.band{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:88px 0;margin-bottom:104px}
+.band .section-head{margin-bottom:44px}
+
+/* DEFINIÇÕES */
+.def-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+.def-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:36px 32px;transition:border-color .25s ease,transform .25s ease}
+.def-card:hover{border-color:oklch(0.7 0.15 245 / 0.45);transform:translateY(-3px)}
+.def-kicker{font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.def-card h2{font-size:26px;letter-spacing:-0.01em;margin-bottom:14px;line-height:1.2}
+.def-card>p{font-size:15.5px;color:var(--ink-dim);line-height:1.65}
+.def-card>p+p{margin-top:12px}
+.list{list-style:none;margin:22px 0 0;display:flex;flex-direction:column;gap:9px}
+.list li{font-size:14.5px;color:var(--ink-dim);display:flex;gap:10px;align-items:flex-start;line-height:1.5}
+.list li::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--accent);margin-top:8px;flex-shrink:0}
+.steps{margin-top:24px;padding-top:20px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:8px}
+.steps span{font-family:'Sora',sans-serif;font-size:15px;font-weight:600;color:var(--ink)}
+.steps span+span::before{content:"↓";display:block;color:var(--accent);font-size:14px;margin-bottom:6px;font-weight:400}
+.note-line{margin-top:26px;font-size:15px;color:var(--ink-dim);text-align:center}
+.note-line strong{color:var(--ink)}
+
+/* FLUXO PREVENÇÃO */
+.flow-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.flow-step{position:relative;background:linear-gradient(150deg,oklch(0.23 0.03 255 / 0.92),oklch(0.18 0.024 255 / 0.94));border:1px solid var(--line);border-radius:16px;padding:26px 20px;transition:border-color .25s ease,transform .25s ease;text-align:center}
+.flow-step:hover{border-color:oklch(0.7 0.15 245 / 0.5);transform:translateY(-3px)}
+.flow-num{font-family:'Sora',sans-serif;font-size:28px;font-weight:700;color:oklch(0.7 0.15 245 / 0.45);line-height:1;margin-bottom:12px}
+.flow-step h3{font-size:15px;letter-spacing:.04em;text-transform:uppercase;margin-bottom:8px}
+.flow-step p{font-size:13.5px;color:var(--ink-dim);line-height:1.5}
+
+/* CARDS GENÉRICOS */
+.card-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card-grid.cols-3{grid-template-columns:repeat(3,1fr)}
+.s-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px 26px;transition:border-color .2s ease,transform .2s ease}
+.s-card:hover{border-color:oklch(1 0 0 / 0.2);transform:translateY(-3px)}
+.s-card .icon{width:48px;height:48px;border-radius:12px;background:transparent;margin-bottom:18px}
+.s-card .icon::part(frame){background:transparent;border:none;box-shadow:none}
+.s-card h3{font-size:17px;margin-bottom:10px;line-height:1.3}
+.s-card p{font-size:14.5px;color:var(--ink-dim);line-height:1.55}
+
+/* IMPACTOS */
+.impact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.impact-grid h2{font-size:38px;line-height:1.14;letter-spacing:-0.02em;margin-top:16px}
+.impact-grid h2 em{font-style:normal;color:var(--accent)}
+.impact-grid>div>p{color:var(--ink-dim);font-size:17px;line-height:1.65;margin-top:20px}
+.tag-cloud{display:flex;flex-wrap:wrap;gap:10px}
+.tag{font-size:14px;font-weight:600;color:var(--ink-dim);border:1px solid var(--line);background:oklch(1 0 0 / 0.03);border-radius:10px;padding:12px 16px;transition:border-color .2s ease,color .2s ease}
+.tag:hover{border-color:oklch(0.7 0.15 245 / 0.5);color:var(--ink)}
+.disclaimer{margin-top:22px;font-size:13.5px;color:var(--ink-faint);line-height:1.6}
+
+/* DADOS */
+.data-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.data-card{background:linear-gradient(150deg,oklch(0.26 0.05 250 / 0.9),oklch(0.19 0.026 255 / 0.95));border:1px solid oklch(0.7 0.15 245 / 0.3);border-radius:18px;padding:34px 30px;box-shadow:0 1px 0 oklch(1 0 0 / 0.06) inset,0 18px 40px -28px oklch(0.55 0.16 250 / 0.6)}
+.data-num{font-family:'Sora',sans-serif;font-size:44px;font-weight:700;color:var(--accent);letter-spacing:-0.02em;line-height:1.05}
+.data-cap{font-size:15.5px;color:var(--ink);font-weight:600;margin-top:14px;line-height:1.45}
+.data-desc{font-size:13.5px;color:var(--ink-faint);margin-top:12px;line-height:1.55}
+.source{margin-top:24px;font-size:13px;color:var(--ink-faint)}
+.themes{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+.theme{display:inline-flex;align-items:center;gap:10px;font-family:'Sora',sans-serif;font-weight:600;font-size:15px;color:var(--ink);border:1px solid oklch(0.7 0.15 245 / 0.35);background:oklch(0.7 0.15 245 / 0.1);border-radius:100px;padding:12px 20px}
+
+/* SST x JURÍDICO */
+.bridge-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:40px}
+.bridge{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px 20px;transition:border-color .2s ease,transform .2s ease}
+.bridge:hover{border-color:oklch(0.7 0.15 245 / 0.5);transform:translateY(-3px)}
+.bridge h3{font-size:16px;margin-bottom:10px}
+.bridge .arrow{color:var(--accent);font-size:15px;line-height:1;margin-bottom:8px;display:block}
+.bridge p{font-size:13.5px;color:var(--ink-dim);line-height:1.5}
+
+/* PERGUNTAS */
+.q-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.q{display:flex;gap:14px;align-items:flex-start;background:linear-gradient(150deg,oklch(0.23 0.03 255 / 0.92),oklch(0.18 0.024 255 / 0.94));border:1px solid var(--line);border-radius:14px;padding:20px 22px;transition:border-color .2s ease,transform .2s ease}
+.q:hover{border-color:oklch(0.7 0.15 245 / 0.5);transform:translateY(-2px)}
+.q::before{content:"?";font-family:'Sora',sans-serif;font-weight:700;font-size:15px;color:var(--accent);border:1px solid oklch(0.7 0.15 245 / 0.4);border-radius:8px;width:30px;height:30px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.q p{font-size:15px;color:var(--ink-dim);line-height:1.5}
+.q-close{margin-top:26px;font-family:'Sora',sans-serif;font-weight:600;font-size:19px;line-height:1.35;color:var(--ink);padding:24px 28px;border-radius:16px;border:1px solid oklch(0.7 0.15 245 / 0.35);background:linear-gradient(120deg,oklch(0.28 0.06 250 / 0.85),oklch(0.2 0.03 255 / 0.9));display:flex;flex-wrap:wrap;align-items:center;gap:14px 18px}
+.q-close span{color:var(--accent);font-size:22px;line-height:1}
+
+/* CTA */
+.cta-banner{padding:0 0 110px}
+.cta-box{background:linear-gradient(135deg,oklch(0.34 0.1 250),oklch(0.26 0.09 225));border-radius:24px;padding:70px;text-align:center}
+.cta-box h2{font-size:36px;margin-bottom:14px;letter-spacing:-0.015em;line-height:1.15}
+.cta-box p{color:oklch(0.93 0.03 245);max-width:640px;margin:0 auto 32px;font-size:16.5px;line-height:1.6}
+.cta-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.cta-box .btn-outline{border-color:oklch(1 0 0 / 0.35);color:var(--ink)}
+
+footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg-2)}
+.foot-grid{display:grid;grid-template-columns:1.4fr repeat(2,1fr);gap:40px;margin-bottom:44px}
+.foot-brand p{color:var(--ink-faint);font-size:14px;margin-top:14px;max-width:300px;line-height:1.6}
+.foot-col h4{font-size:13px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.06em;margin-bottom:16px;font-family:'Sora',sans-serif}
+.foot-col a{display:block;color:var(--ink-dim);font-size:14.5px;margin-bottom:10px}
+.foot-col a:hover{color:var(--ink)}
+.foot-bottom{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding-top:28px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-faint)}
+
+@keyframes revealIn{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:translateY(0)}}
+.reveal.in{animation:revealIn .7s cubic-bezier(.16,.8,.3,1) both}
+.hero h1,.hero .eyebrow,.hero p.sub,.hero-ctas,.trust-chips{opacity:0;transform:translateY(16px);animation:revealIn .7s ease forwards}
+.hero .eyebrow{animation-delay:.05s}.hero h1{animation-delay:.15s}.hero p.sub{animation-delay:.28s}.hero-ctas{animation-delay:.4s}.trust-chips{animation-delay:.5s}
+@media(prefers-reduced-motion:reduce){.reveal,.hero h1,.hero .eyebrow,.hero p.sub,.hero-ctas,.trust-chips{opacity:1!important;transform:none!important;animation:none!important}}
+
+@media(max-width:1050px){.card-grid,.card-grid.cols-3{grid-template-columns:1fr 1fr}.flow-grid,.bridge-grid{grid-template-columns:repeat(2,1fr)}.data-grid{grid-template-columns:1fr}.impact-grid,.def-grid{grid-template-columns:1fr;gap:36px}}
+@media(max-width:760px){
+  .wrap{padding:0 22px}
+  .hero{padding:56px 0 56px}
+  .hero-grid{grid-template-columns:1fr;gap:36px}
+  .hero h1{font-size:32px}
+  .hero p.sub{font-size:16.5px}
+  .hero-shot{height:220px}
+  .float-card{max-width:none;align-self:stretch}
+  .section-head h2,.impact-grid h2{font-size:27px}
+  .card-grid,.card-grid.cols-3,.flow-grid,.bridge-grid,.q-grid,.foot-grid{grid-template-columns:1fr}
+  .def-card,.s-card{padding:26px 22px}
+  .data-num{font-size:34px}
+  .cta-box{padding:44px 24px}
+  .cta-box h2{font-size:26px}
+  .nav-actions .back{display:none}
+  section.block{padding:0 0 72px}
+  .band{padding:64px 0;margin-bottom:72px}
+}
+image-slot{min-width:0 !important;max-width:100% !important}
+html,body{overflow-x:hidden}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="index.html" class="logo"><image-slot src="assets/slots/logo-nav.webp" id="logo-nav-jur" class="logo-mark" shape="rounded" radius="8" placeholder="Logo"></image-slot>Azuris Soluções em SST</a>
+      <div class="nav-actions">
+        <a href="index.html#recursos" class="back">← Voltar</a>
+        <a href="https://wa.me/5513996559306" target="_blank" class="btn btn-primary">Falar com um especialista</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" data-screen-label="hero-juridico">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Jurídico Trabalhista</span>
+      <h1>Assessoria e Consultoria <em>Jurídica Trabalhista</em></h1>
+      <p class="sub">Prevenção, orientação e suporte especializado para ajudar sua empresa a reduzir riscos trabalhistas e tomar decisões com mais segurança.</p>
+      <div class="hero-ctas">
+        <a href="https://wa.me/5513996559306" target="_blank" class="btn btn-primary">Falar com um especialista</a>
+        <a href="#como-ajudamos" class="btn btn-outline">Como podemos ajudar</a>
+      </div>
+      <div class="trust-chips">
+        <span class="chip">Atuação preventiva</span>
+        <span class="chip">Análise de documentos e procedimentos</span>
+        <span class="chip">Integração com SST</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <image-slot src="assets/slots/jur-hero-shot.webp" id="jur-hero-shot" class="hero-shot" shape="rounded" radius="20" placeholder="Foto: reunião de gestão / análise documental"></image-slot>
+      <div class="float-card">
+        <div class="float-value">Identificar antes que vire problema</div>
+        <div class="float-delta">Orientação para reconhecer pontos de atenção nas relações de trabalho e agir de forma preventiva.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band reveal" data-screen-label="conceitos">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Conceitos</span>
+      <h2>Assessoria e consultoria: o que são e como se diferenciam</h2>
+      <p>Duas formas de apoio jurídico trabalhista que podem atuar de maneira <strong>complementar</strong>, conforme o momento e a necessidade da empresa.</p>
+    </div>
+    <div class="def-grid">
+      <article class="def-card">
+        <div class="def-kicker">Assessoria</div>
+        <h2>O que é uma assessoria jurídica trabalhista?</h2>
+        <p>A assessoria jurídica trabalhista está relacionada ao acompanhamento contínuo das questões jurídicas que envolvem as relações de trabalho da empresa.</p>
+        <p>O objetivo é oferecer orientação preventiva e suporte para que a empresa conduza suas atividades com maior segurança e alinhamento à legislação trabalhista.</p>
+        <ul class="list">
+          <li>Orientações relacionadas às relações de trabalho</li>
+          <li>Análise preventiva de situações que podem gerar conflitos</li>
+          <li>Orientação sobre procedimentos internos</li>
+          <li>Análise de documentos e práticas trabalhistas</li>
+          <li>Apoio na prevenção de passivos</li>
+          <li>Orientação diante de situações que possam gerar demandas</li>
+          <li>Acompanhamento de questões relacionadas à legislação trabalhista</li>
+          <li>Interface com documentos e processos relacionados à Saúde e Segurança do Trabalho</li>
+        </ul>
+        <div class="steps"><span>Atuação mais contínua</span><span>Acompanhamento</span><span>Orientação preventiva</span></div>
+      </article>
+      <article class="def-card">
+        <div class="def-kicker">Consultoria</div>
+        <h2>O que é uma consultoria jurídica trabalhista?</h2>
+        <p>A consultoria é uma atuação mais direcionada: parte de uma situação, problema, processo ou necessidade específica da empresa.</p>
+        <p>Enquanto a assessoria acompanha o dia a dia, a consultoria analisa um ponto determinado e entrega diagnóstico e recomendação.</p>
+        <ul class="list">
+          <li>Análise de determinada situação trabalhista</li>
+          <li>Avaliação de procedimentos</li>
+          <li>Análise de documentos</li>
+          <li>Identificação de possíveis riscos</li>
+          <li>Orientação para tomada de decisão</li>
+          <li>Avaliação de processos internos</li>
+          <li>Recomendações preventivas</li>
+          <li>Análise de situações envolvendo SST e possíveis reflexos trabalhistas</li>
+        </ul>
+        <div class="steps"><span>Atuação direcionada</span><span>Análise de uma necessidade</span><span>Diagnóstico e recomendação</span></div>
+      </article>
+    </div>
+    <p class="note-line">Os dois serviços podem ser contratados de forma isolada ou <strong>combinada</strong>, conforme a realidade da empresa.</p>
+  </div>
+</section>
+
+<section class="block reveal" data-screen-label="prevencao">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Assessoria + Consultoria</span>
+      <h2>Prevenção começa com <em>informação e orientação.</em></h2>
+      <p>Uma empresa não precisa esperar uma reclamação trabalhista, fiscalização ou conflito para buscar orientação. A atuação preventiva permite identificar situações que merecem atenção e tomar decisões antes que o problema cresça.</p>
+    </div>
+    <div class="flow-grid">
+      <div class="flow-step"><div class="flow-num">01</div><h3>Identificar</h3><p>Reconhecer situações que merecem atenção na rotina da empresa.</p></div>
+      <div class="flow-step"><div class="flow-num">02</div><h3>Analisar</h3><p>Avaliar documentos, práticas e procedimentos envolvidos.</p></div>
+      <div class="flow-step"><div class="flow-num">03</div><h3>Orientar</h3><p>Apresentar caminhos e recomendações para a decisão.</p></div>
+      <div class="flow-step"><div class="flow-num">04</div><h3>Corrigir</h3><p>Ajustar processos, registros e rotinas quando necessário.</p></div>
+      <div class="flow-step"><div class="flow-num">05</div><h3>Prevenir</h3><p>Reduzir vulnerabilidades e acompanhar de forma contínua.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block reveal" id="como-ajudamos" data-screen-label="como-ajudamos">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Escopo de atuação</span>
+      <h2>Como podemos ajudar sua empresa?</h2>
+    </div>
+    <div class="card-grid">
+      <div class="s-card"><image-slot src="assets/slots/jur-c1.webp" id="jur-c1" class="icon" shape="rounded" radius="12" placeholder="Ícone"></image-slot><h3>Prevenção de riscos trabalhistas</h3><p>Identificação de situações que podem gerar conflitos ou exposição jurídica para a empresa.</p></div>
+      <div class="s-card"><image-slot src="assets/slots/jur-c2.webp" id="jur-c2" class="icon" shape="rounded" radius="12" placeholder="Ícone"></image-slot><h3>Análise documental</h3><p>Avaliação de documentos e registros relacionados às relações de trabalho e à gestão de SST.</p></div>
+      <div class="s-card"><image-slot src="assets/slots/jur-c3.webp" id="jur-c3" class="icon" shape="rounded" radius="12" placeholder="Ícone"></image-slot><h3>Orientação preventiva</h3><p>Apoio para que a empresa possa tomar decisões com maior segurança.</p></div>
+      <div class="s-card"><image-slot src="assets/slots/jur-c4.webp" id="jur-c4" class="icon" shape="rounded" radius="12" placeholder="Ícone"></image-slot><h3>Análise de procedimentos</h3><p>Avaliação de práticas e processos internos que possam representar riscos.</p></div>
+      <div class="s-card"><image-slot src="assets/slots/jur-c5.webp" id="jur-c5" class="icon" shape="rounded" radius="12" placeholder="Ícone"></image-slot><h3>Apoio em situações trabalhistas</h3><p>Orientação diante de situações que possam resultar em conflitos ou demandas.</p></div>
+      <div class="s-card"><image-slot src="assets/slots/jur-c6.webp" id="jur-c6" class="icon" shape="rounded" radius="12" placeholder="Ícone"></image-slot><h3>Integração com SST</h3><p>Análise dos possíveis reflexos trabalhistas relacionados à Saúde e Segurança do Trabalho.</p></div>
+      <div class="s-card"><image-slot src="assets/slots/jur-c7.webp" id="jur-c7" class="icon" shape="rounded" radius="12" placeholder="Ícone"></image-slot><h3>Requisitos de clientes e contratos</h3><p>Apoio na análise de exigências documentais e trabalhistas apresentadas por clientes e contratantes.</p></div>
+      <div class="s-card"><image-slot src="assets/slots/jur-c8.webp" id="jur-c8" class="icon" shape="rounded" radius="12" placeholder="Ícone"></image-slot><h3>Diagnóstico preventivo</h3><p>Identificação de pontos de atenção e oportunidades de melhoria nos processos da empresa.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band reveal" data-screen-label="impactos">
+  <div class="wrap impact-grid">
+    <div>
+      <span class="eyebrow">Por que a prevenção é importante</span>
+      <h2>Uma ação trabalhista pode custar <em>muito mais do que o valor da condenação.</em></h2>
+      <p>Dependendo do caso, os impactos de uma demanda trabalhista vão além do valor discutido no processo e alcançam a rotina, a equipe e a reputação da empresa.</p>
+      <p class="disclaimer">Nem toda demanda gera todos esses efeitos — a extensão depende do caso concreto, do setor e da forma como a empresa administra seus registros e procedimentos.</p>
+    </div>
+    <div>
+      <div class="tag-cloud">
+        <span class="tag">Valores de condenações</span>
+        <span class="tag">Acordos</span>
+        <span class="tag">Encargos e obrigações decorrentes</span>
+        <span class="tag">Custos com defesa e acompanhamento</span>
+        <span class="tag">Tempo da administração</span>
+        <span class="tag">Mobilização de equipes</span>
+        <span class="tag">Impactos na produtividade</span>
+        <span class="tag">Riscos relacionados à imagem</span>
+        <span class="tag">Dificuldades em contratos e auditorias</span>
+        <span class="tag">Exposição de falhas internas</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block reveal" data-screen-label="dados">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Dados oficiais</span>
+      <h2>O tamanho do risco trabalhista no Brasil</h2>
+    </div>
+    <div class="data-grid">
+      <div class="data-card">
+        <div class="data-num">4,09 milhões</div>
+        <div class="data-cap">processos recebidos pela Justiça do Trabalho em 2024</div>
+        <div class="data-desc">Foram 4.090.375 processos considerando casos novos e recursos. Somente entre os casos novos, foram 3.599.940 novas ações trabalhistas.</div>
+      </div>
+      <div class="data-card">
+        <div class="data-num">Quase R$ 50 bi</div>
+        <div class="data-cap">pagos a quem iniciou ações e obteve resultado favorável na Justiça do Trabalho em 2024</div>
+        <div class="data-desc">O valor total pago inclui montantes decorrentes de acordos, execução e pagamentos espontâneos.</div>
+      </div>
+      <div class="data-card">
+        <div class="data-num">+14%</div>
+        <div class="data-cap">crescimento no número de processos julgados em 2024</div>
+        <div class="data-desc">Foram julgados 4.000.793 processos, crescimento de 14,3% em relação ao ano anterior.</div>
+      </div>
+    </div>
+    <p class="source">Fonte: Conselho Nacional de Justiça (CNJ) e Tribunal Superior do Trabalho (TST). Dados referentes a 2024.</p>
+  </div>
+</section>
+
+<section class="block reveal" data-screen-label="temas">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Assuntos recorrentes</span>
+      <h2>Quais são os principais temas que chegam à Justiça do Trabalho?</h2>
+      <p>Entre os assuntos mais recorrentes nas novas ações de 2024, segundo CNJ/TST:</p>
+    </div>
+    <div class="themes">
+      <span class="theme">Adicional de insalubridade</span>
+      <span class="theme">Verbas rescisórias</span>
+      <span class="theme">FGTS</span>
+      <span class="theme">Multa do artigo 477 da CLT</span>
+      <span class="theme">Dano moral</span>
+    </div>
+    <p class="source">Os temas variam conforme o setor, atividade e realidade de cada empresa. Fonte: CNJ / TST, dados de 2024.</p>
+  </div>
+</section>
+
+<section class="band reveal" data-screen-label="sst-juridico">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">SST e risco trabalhista</span>
+      <h2>Quando SST e jurídico precisam conversar</h2>
+      <p>Questões relacionadas à Saúde e Segurança do Trabalho podem ter reflexos importantes nas relações trabalhistas. Documentação, treinamentos, registros, avaliações, procedimentos e medidas preventivas podem ser relevantes para demonstrar como a empresa administra seus riscos ocupacionais.</p>
+    </div>
+    <div class="bridge-grid">
+      <div class="bridge"><h3>Treinamentos</h3><span class="arrow">↓</span><p>Registros e comprovação das capacitações realizadas.</p></div>
+      <div class="bridge"><h3>Documentação</h3><span class="arrow">↓</span><p>Organização e rastreabilidade das informações.</p></div>
+      <div class="bridge"><h3>Procedimentos</h3><span class="arrow">↓</span><p>Padronização das atividades desenvolvidas.</p></div>
+      <div class="bridge"><h3>Gestão de riscos</h3><span class="arrow">↓</span><p>Prevenção aplicada à realidade da operação.</p></div>
+      <div class="bridge"><h3>Evidências</h3><span class="arrow">↓</span><p>Maior capacidade de demonstrar as medidas adotadas pela empresa.</p></div>
+    </div>
+    <p class="disclaimer">A documentação não impede que uma demanda ocorra, mas pode contribuir para reduzir vulnerabilidades e fortalecer a forma como a empresa demonstra suas práticas.</p>
+  </div>
+</section>
+
+<section class="block reveal" id="quando-procurar" data-screen-label="quando-procurar">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Quando procurar apoio</span>
+      <h2>Sua empresa apresenta alguma dessas situações?</h2>
+    </div>
+    <div class="q-grid">
+      <div class="q"><p>Você tem dúvidas sobre determinada situação trabalhista?</p></div>
+      <div class="q"><p>Existem procedimentos internos que precisam ser revisados?</p></div>
+      <div class="q"><p>Os documentos da empresa estão organizados?</p></div>
+      <div class="q"><p>Você precisa analisar uma situação antes de tomar uma decisão?</p></div>
+      <div class="q"><p>Sua empresa recebeu uma notificação?</p></div>
+      <div class="q"><p>Um cliente está exigindo documentação trabalhista e de SST?</p></div>
+      <div class="q"><p>Você quer identificar riscos antes que eles se transformem em problemas?</p></div>
+      <div class="q"><p>Sua empresa não possui um departamento jurídico interno?</p></div>
+    </div>
+    <div class="q-close"><span>→</span>Se você respondeu sim a alguma dessas perguntas, uma análise especializada pode ajudar.</div>
+  </div>
+</section>
+
+<section class="block reveal" id="beneficios" data-screen-label="beneficios">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Benefícios</span>
+      <h2>Prevenir é também uma estratégia de gestão.</h2>
+      <p>A empresa não consegue eliminar todos os riscos trabalhistas, mas pode <strong>melhorar significativamente sua capacidade de identificar, compreender, prevenir e administrar</strong> esses riscos.</p>
+    </div>
+    <div class="card-grid cols-3">
+      <div class="s-card"><image-slot src="assets/slots/jur-b1.webp" id="jur-b1" class="icon" shape="rounded" radius="12" placeholder="Ícone"></image-slot><h3>Mais segurança para decidir</h3><p>Apoio especializado para decisões relacionadas às relações de trabalho.</p></div>
+      <div class="s-card"><image-slot src="assets/slots/jur-b2.webp" id="jur-b2" class="icon" shape="rounded" radius="12" placeholder="Ícone"></image-slot><h3>Identificação antecipada de riscos</h3><p>Possibilidade de encontrar pontos de atenção antes que se transformem em conflitos.</p></div>
+      <div class="s-card"><image-slot src="assets/slots/jur-b3.webp" id="jur-b3" class="icon" shape="rounded" radius="12" placeholder="Ícone"></image-slot><h3>Organização</h3><p>Melhor estruturação de documentos e processos.</p></div>
+      <div class="s-card"><image-slot src="assets/slots/jur-b4.webp" id="jur-b4" class="icon" shape="rounded" radius="12" placeholder="Ícone"></image-slot><h3>Redução de vulnerabilidades</h3><p>Ações preventivas podem ajudar a reduzir pontos de exposição.</p></div>
+      <div class="s-card"><image-slot src="assets/slots/jur-b5.webp" id="jur-b5" class="icon" shape="rounded" radius="12" placeholder="Ícone"></image-slot><h3>Maior controle</h3><p>Mais clareza sobre situações que precisam de acompanhamento.</p></div>
+      <div class="s-card"><image-slot src="assets/slots/jur-b6.webp" id="jur-b6" class="icon" shape="rounded" radius="12" placeholder="Ícone"></image-slot><h3>Visão integrada</h3><p>Análise das questões trabalhistas em conjunto com aspectos relacionados à SST.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner reveal" data-screen-label="cta">
+  <div class="wrap">
+    <div class="cta-box">
+      <h2>Sua empresa está preparada para os riscos trabalhistas do dia a dia?</h2>
+      <p>Conte com orientação especializada para analisar situações, identificar pontos de atenção e fortalecer uma atuação preventiva.</p>
+      <div class="cta-actions">
+        <a href="https://wa.me/5513996559306" target="_blank" class="btn btn-primary">Falar com um especialista</a>
+        <a href="https://wa.me/5513996559306" target="_blank" class="btn btn-outline">Solicitar uma avaliação</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="logo"><image-slot src="assets/slots/logo-footer.webp" id="logo-foot-jur" class="logo-mark" shape="rounded" radius="8" placeholder="Logo"></image-slot>Azuris Soluções em SST</div>
+        <p>Soluções completas em Saúde e Segurança do Trabalho, gestão e tecnologia para pequenas e médias empresas.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Jurídico trabalhista</h4>
+        <a href="#como-ajudamos">Como podemos ajudar</a>
+        <a href="#quando-procurar">Quando procurar apoio</a>
+        <a href="#beneficios">Benefícios da prevenção</a>
+      </div>
+      <div class="foot-col">
+        <h4>Azuris</h4>
+        <a href="index.html">Página inicial</a>
+        <a href="index.html#recursos">Todas as soluções</a>
+        <a href="https://wa.me/5513996559306" target="_blank">Falar no WhatsApp</a>
+      </div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 Azuris Soluções em SST. Todos os direitos reservados.</span><span>13 99655-9306</span></div>
+  </div>
+</footer>
+
+<script>
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
