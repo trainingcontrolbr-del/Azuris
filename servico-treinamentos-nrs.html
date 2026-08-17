@@ -241,7 +241,7 @@ html,body{overflow-x:hidden}
       </div>
     </div>
     <div class="hero-visual">
-      <div id="nrs-hero-shot" class="hero-shot video-slot"><video autoplay muted loop playsinline></video><img class="media-img" alt=""><label class="video-drop"><span class="vd-title">Enviar imagem</span><span class="vd-sub">Clique ou arraste uma foto (.jpg, .png) de treinamento corporativo de SST</span><input type="file" accept="image/*,video/*"></label><button type="button" class="video-clear">Trocar mídia</button></div>
+      <div id="nrs-hero-shot" class="hero-shot video-slot has-image"><video autoplay muted loop playsinline></video><img class="media-img" src="nrs-hero-shot.webp" alt="Treinamento corporativo de Normas Regulamentadoras"></div>
       <div class="float-card">
         <div class="float-value">Capacitação adaptada à sua operação</div>
         <div class="float-delta">Conteúdo definido a partir das atividades, dos riscos e do perfil dos participantes.</div>
@@ -461,15 +461,7 @@ html,body{overflow-x:hidden}
 </footer>
 
 <script>
-(function(){document.querySelectorAll('.video-slot').forEach(slot=>{const vid=slot.querySelector('video'),pic=slot.querySelector('img.media-img'),input=slot.querySelector('input[type=file]'),drop=slot.querySelector('.video-drop'),clear=slot.querySelector('.video-clear'),KEY=slot.id+'-video-src',KIND=slot.id+'-media-kind';
-function set(src,kind){if(kind==='image'){pic.src=src;slot.classList.add('has-image');slot.classList.remove('has-video')}else{vid.src=src;slot.classList.add('has-video');slot.classList.remove('has-image');vid.play().catch(()=>{})}}
-function load(f){if(!f)return;const kind=f.type.startsWith('image/')?'image':f.type.startsWith('video/')?'video':null;if(!kind)return;set(URL.createObjectURL(f),kind);if(f.size<4.5e6){const r=new FileReader();r.onload=()=>{try{localStorage.setItem(KEY,r.result);localStorage.setItem(KIND,kind)}catch(e){}};r.readAsDataURL(f)}}
-input.addEventListener('change',e=>load(e.target.files[0]));
-['dragenter','dragover'].forEach(t=>drop.addEventListener(t,e=>{e.preventDefault();drop.classList.add('drag')}));
-['dragleave','drop'].forEach(t=>drop.addEventListener(t,e=>{e.preventDefault();drop.classList.remove('drag')}));
-drop.addEventListener('drop',e=>load(e.dataTransfer.files[0]));
-clear.addEventListener('click',()=>{vid.removeAttribute('src');vid.load();pic.removeAttribute('src');slot.classList.remove('has-video','has-image');try{localStorage.removeItem(KEY);localStorage.removeItem(KIND)}catch(e){}});
-try{const s=localStorage.getItem(KEY);if(s)set(s,localStorage.getItem(KIND)||'video')}catch(e){}})})();
+
 const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </script>
